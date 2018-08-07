@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Акимов Алексей](https://up.htmlacademy.ru/htmlcss/22/user/822271).
-* Наставник: [Александр Кардашов](https://htmlacademy.ru/profile/id77080).
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
