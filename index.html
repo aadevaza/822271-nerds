@@ -8,15 +8,15 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип веб-студии Нёрдс">
+          <img src="http://placehold.it/150x100" width="150" height="100" alts="Логотип веб-студии Нёрдс">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="button site-navigation-button"><a href="#">Студия</a></li>
+          <li class="button site-navigation-button"><a href="#">Клиенты</a></li>
+          <li class="button site-navigation-button"><a href="#">Магазин</a></li>
+          <li class="button site-navigation-button"><a href="#">Контакты</a></li>
         </ul>
-        <ul class="basket-navigation">
+        <ul class="button basket-navigation">
           <li><a href="#">Корзина</a></li>
         </ul>
       </nav>
@@ -25,55 +25,39 @@
 
       <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
 
-      <section class="info">
-        <h2>Долго, дорого, скрупулезно.</h2>
-        <ul class="info-list">
-          <li class="info-item">
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          </li>
-        </ul>
-        <a class="info-button" href="#">Узнать больше</a>
+      <section class="tagline">
+        <b>Долго, дорого,<br>
+           скрупулезно.
+        </b>
+          <p>
+            Математически выверенный дизайн<br>
+               для вашего сайта или мобильного приложения
+          </p>
+        <a class="button tagline-button" href="#">Узнать больше</a>
       </section>
 
-      <div class="image-mobile">
-        <p><img src="http://via.placeholder.com/350x150" width="350" height="150" alt="mobile-app"></p>
-      </div>
-
-      <section class="coding-web-site">
-        <p><img src="http://placehold.it/150x100" width="150" height="100" alt="Компутер"></p>
-        <h2>ВЕБ-САЙТЫ</h2>
-        <ul class="coding-web-site-list">
-          <li class="coding-web-site-item">
+      <section class="services">
+        <ul class="services-element">
+          <li class="services-web-site">
+            <h2 class="services-web-site-title">Веб-сайты</h2>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button services-web-site-button" href="#">Заказать</a>
           </li>
-        </ul>
-        <a class="web-site-button" href="#">Заказать</a>
-      </section>
-
-      <section class="coding-app">
-        <p><img src="http://placehold.it/150x100" width="150" height="100" alt="мобилка"></p>
-        <h2>Приложения</h2>
-        <ul class="coding-app-list">
-          <li class="coding-app-item">
+          <li class="services-app">
+            <h2 class="services-app-title">Приложения</h2>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button services-app-button" href="#">Заказать</a>
           </li>
-        </ul>
-        <a class="app-button" href="#">Заказать</a>
-      </section>
-
-      <section class="presentation">
-        <p><img src="http://placehold.it/150x100" width="150" height="100" alt="презентация"></p>
-        <h2>Презентация</h2>
-        <ul class="presentation-list">
-          <li class="presentation-item">
+          <li class="services-presentation">
+            <h2 class="services-presentation-title">Презентация</h2>
             <p>Вы даже не подозреваете, на сколько вы изумительный!</p>
+            <a class="button services-presentation-button" href="#">Заказать</a>
           </li>
         </ul>
-        <a class="presentation-button" href="#">Заказать</a>
       </section>
 
-      <section class="types-jobs">
-        <p><b><span class="commandments">Мы — маленькая, но гордая дизайн-студия из Краснодара.</span></b></p>
+      <section class="about-us">
+        <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <p><b>Выполняем заказы на разработку:</b></p>
         <ul class="types-jobs-list">
@@ -81,49 +65,45 @@
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-      </section>
-
-      <section class="features">
         <h2 class="visual-hidden">Преимущества</h2>
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип нёрдс снизу">
-        <p><b>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</b></p>
-        <ul class="features-list">
-          <li><span class="features-items">146%</span> <p>Уровень самоотдачи</p></li>
-          <li><span class="features-items">100%</span> <p>Соблюдение сроков</p></li>
-          <li><span class="features-items">50%</span> <p>Миниальная предоплата</p></li>
-        </ul>
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип веб-студии Нёрдс">
+        <b>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</b>
+        <dl class="features-list">
+          <dt class="features-items">146%</dt>
+          <dd>Уровень самоотдачи</dd>
+          <dt class="features-items">100%</dt>
+          <dd>Соблюдение сроков</dd>
+          <dt class="features-items">50%</dt>
+          <dd>Миниальная предоплата</dd>
+        </dl>
       </section>
 
-      <div class="collab">
+      <section class="collab">
         <ul class="collab-list">
-          <li><img src="http://placehold.it/150x100" alt="html academy logo"></li>
-          <li><img src="http://placehold.it/150x100" alt="Borodinski logo"></li>
-          <li><img src="http://placehold.it/150x100" alt="PINK logo"></li>
-          <li><img src="http://placehold.it/150x100" alt="MISHKA logo"></li>
+          <li class="collab-items"><img src="http://placehold.it/150x100" alt="html academy logo"></li>
+          <li class="collab-items"><img src="http://placehold.it/150x100" alt="Borodinski logo"></li>
+          <li class="collab-items"><img src="http://placehold.it/150x100" alt="PINK logo"></li>
+          <li class="collab-items"><img src="http://placehold.it/150x100" alt="MISHKA logo"></li>
         </ul>
-      </div>
+      </section>
 
       <section class="contacts">
         <span class="script-map"></span>
         <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-          тел. +7 (812) 275-75-75
-        </p>
-        <a class="contacts-button" href="#">Напишите нам</a>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="button contacts-button" href="#">Напишите нам</a>
       </section>
 
     </main>
     <footer class="footer">
-      <div class="footer-social">
-        <a class="social-button" href="#">Вконтакте</a>
-        <a class="social-button" href="#">Фейсбук</a>
-        <a class="social-button" href="#">Инстаграм</a>
-      </div>
-      <div class="special-offer">
+      <ul class="footer-social">
+        <li class="button footer-social-button"><a href="#">Вконтакте</a></li>
+        <li class="button footer-social-button"><a href="#">Фейсбук</a></li>
+        <li class="button footer-social-button"><a href="#">Инстаграм</a></li>
+      </ul>
         <p><span><b>Давайте дружить, это выгодно!</b></span></p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
     </footer>
   </body>
 </html>
