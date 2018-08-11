@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип веб-студии Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a href="#">Студия</a></li>
+          <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+          <li class="site-navigation-item"><a href="#">Магазин</a></li>
+          <li class="site-navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="site-navigation-basket">
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+
+      <h1 class="catalog-title">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
+
+      <section class="filter">
+        <form action="#" method="post">
+          <fieldset class="filter-price">
+            <legend class="filter-title">Стоимость:</legend>
+            <div class="range-line"></div>
+                <input type="range" min="0" max="15000">
+                  <label>
+                    от <input type="text" value="0">
+                  </label>
+                  <label>
+                    до <input type="text" value="15000">
+                  </label>
+                </div>
+          </fieldset>
+          <fieldset class="filter-box">
+            <legend class="filter-title">Сетка:</legend>
+            <input type="radio" id="adaptive" name="radio" checked>
+            <label for="adaptive">Адаптивная</label>
+
+            <input type="radio" id="fixed" name="radio">
+            <label for="fixed">Фиксированная</label>
+
+            <input type="radio" id="rubber" name="radio">
+            <label for="rubber">Резиновая</label>
+          </fieldset>
+          <fieldset class="filter-box">
+            <legend class="filter-title">Особенности:</legend>
+            <input type="checkbox" id="slider" name="slider" checked>
+            <label for="slider">Слайдер</label>
+
+            <input type="checkbox" id="advantages" name="advantages">
+            <label for="advantages">Блок преимуществ</label>
+
+            <input type="checkbox" id="news" name="news" checked>
+            <label for="news">Новости</label>
+
+            <input type="checkbox" id="gallery" name="gallery">
+            <label for="gallery">Галерея</label>
+
+            <input type="checkbox" id="basket" name="basket">
+            <label for="basket">Корзина</label>
+          </fieldset>
+          <button class="button filter-button">Показать</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <ul class="catalog-sorting">
+          <b class="catalog-title">Сортировать:</b>
+          <li class="catalog-sorting-item"><a href="#">По цене</a></li>
+          <li class="catalog-sorting-item"><a href="#">По типу</a></li>
+          <li class="catalog-sorting-item"><a href="#">По названию</a></li>
+          <li class="sort-updown"></li>
+        </ul>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — Sedona">
+          </li>
+          <li class="catalog-item">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — PINK">
+          </li>
+          <li class="catalog-item">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — Barbershop BORODINSKI">
+          </li>
+          <li class="catalog-item">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — MISHKA">
+          </li>
+          <li class="catalog-item">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — A+">
+          </li>
+          <li class="catalog-item">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — КВАСТ">
+          </li>
+        </ul>
+        <ul class="paginator">
+          <li class="paginator-item"><a href="#">1</a></li>
+          <li class="paginator-item"><a href="#">2</a></li>
+          <li class="paginator-item"><a href="#">3</a></li>
+          <li class="paginator-item next"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <span class="script-map"></span>
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="button contacts-button" href="#">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul class="footer-social">
+        <li class="button footer-social-button"><a href="#">Вконтакте</a></li>
+        <li class="button footer-social-button"><a href="#">Фейсбук</a></li>
+        <li class="button footer-social-button"><a href="#">Инстаграм</a></li>
+      </ul>
+        <p><span><b>Давайте дружить, это выгодно!</b></span></p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+  </body>
+</html>
