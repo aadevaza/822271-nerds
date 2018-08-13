@@ -5,30 +5,30 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a href="index.html" class="main-header_logo">
+    <header class="header">
+      <nav class="header-navigation main-navigation">
+        <a href="index.html" class="header_logo">
           <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип веб-студии Нёрдс">
         </a>
-        <ul class="navigation_list">
-          <li class="navigation_item"><a href="#">Студия</a></li>
-          <li class="navigation_item"><a href="#">Клиенты</a></li>
-          <li class="navigation_item"><a>Магазин</a></li>
-          <li class="navigation_item"><a href="#">Контакты</a></li>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#">Студия</a></li>
+          <li class="navigation__item"><a href="#">Клиенты</a></li>
+          <li class="navigation__item"><a>Магазин</a></li>
+          <li class="navigation__item"><a href="#">Контакты</a></li>
         </ul>
-        <ul class="navigation-extra_list">
-          <li class="navigation-extra_item"><a href="#">Корзина</a></li>
+        <ul class="navigation__extra-list">
+          <li class="navigation__extra-item"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
 
-      <h1 class="catalog_title">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
+      <h1 class="catalog__title">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
 
       <section class="filter">
         <form action="#" method="post">
-          <fieldset class="filter-price">
-            <legend class="filter_title">Стоимость:</legend>
+          <fieldset class="filter__price">
+            <legend class="filter__title">Стоимость:</legend>
             <div class="range-line"></div>
                 <input type="range" min="0" max="15000">
                   <label>
@@ -39,8 +39,8 @@
                   </label>
                 </div>
           </fieldset>
-          <fieldset class="filter_box">
-            <legend class="filter_title">Сетка:</legend>
+          <fieldset class="filter__box">
+            <legend class="filter__title">Сетка:</legend>
             <input type="radio" id="adaptive" name="radio" checked>
             <label for="adaptive">Адаптивная</label>
 
@@ -50,8 +50,8 @@
             <input type="radio" id="rubber" name="radio">
             <label for="rubber">Резиновая</label>
           </fieldset>
-          <fieldset class="filter_box">
-            <legend class="filter_title">Особенности:</legend>
+          <fieldset class="filter__box">
+            <legend class="filter__title">Особенности:</legend>
             <input type="checkbox" id="slider" name="slider" checked>
             <label for="slider">Слайдер</label>
 
@@ -67,61 +67,61 @@
             <input type="checkbox" id="basket" name="basket">
             <label for="basket">Корзина</label>
           </fieldset>
-          <button class="button filter_button">Показать</button>
+          <button class="button filter__link">Показать</button>
         </form>
       </section>
       <section class="catalog">
-      </b class="catalog_title">Сортировать:<b>
+      </b class="catalog__title">Сортировать:<b>
         <ul class="catalog-sorting">
-          <li class="catalog-sorting_item"><a href="#">По цене</a></li>
-          <li class="catalog-sorting_item"><a href="#">По типу</a></li>
-          <li class="catalog-sorting_item"><a href="#">По названию</a></li>
-          <li class="catalog-sorting_item --updown"></li>
+          <li class="catalog-sorting__item"><a href="#">По цене</a></li>
+          <li class="catalog-sorting__item"><a href="#">По типу</a></li>
+          <li class="catalog-sorting__item"><a href="#">По названию</a></li>
+          <li class="catalog-sorting__item --updown"></li>
         </ul>
-        <ul class="catalog_list">
-          <li class="catalog_item">
+        <ul class="catalog__list">
+          <li class="catalog__item">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — Sedona">
           </li>
-          <li class="catalog_item">
+          <li class="catalog__item">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — PINK">
           </li>
-          <li class="catalog_item">
+          <li class="catalog__item">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — Barbershop BORODINSKI">
           </li>
-          <li class="catalog_item">
+          <li class="catalog__item">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — MISHKA">
           </li>
-          <li class="catalog_item">
+          <li class="catalog__item">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — A+">
           </li>
-          <li class="catalog_item">
+          <li class="catalog__item">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Пример работы, сайт — КВАСТ">
           </li>
         </ul>
         <ul class="paginator">
-          <li class="paginator_item"><a href="#">1</a></li>
-          <li class="paginator_item"><a href="#">2</a></li>
-          <li class="paginator_item"><a href="#">3</a></li>
-          <li class="paginator_item --next"><a href="#">Следующая</a></li>
+          <li class="paginator__item"><a href="#">1</a></li>
+          <li class="paginator__item"><a href="#">2</a></li>
+          <li class="paginator__item"><a href="#">3</a></li>
+          <li class="paginator__item paginator__item--next"><a href="#">Следующая</a></li>
         </ul>
       </section>
       <section class="contacts">
         <span class="script-map"></span>
-        <h2 class="contacts_title">NЁRDS DESIGN STUDIO</h2>
-        <p class="contacts_text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts_text">тел. +7 (812) 275-75-75</p>
-        <a class="button contacts_link" href="#">Напишите нам</a>
+        <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
+        <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contacts__text">тел. +7 (812) 275-75-75</p>
+        <a class="button contacts__link" href="#">Напишите нам</a>
       </section>
 
     </main>
     <footer class="footer">
-      <ul class="footer-social">
-        <li class="button footer-social_link"><a href="#">Вконтакте</a></li>
-        <li class="button footer-social_link"><a href="#">Фейсбук</a></li>
-        <li class="button footer-social_link"><a href="#">Инстаграм</a></li>
+      <ul class="site-footer social">
+        <li class="button social__link--vk"><a href="#">Вконтакте</a></li>
+        <li class="button social__link--fb"><a href="#">Фейсбук</a></li>
+        <li class="button social__link--insta"><a href="#">Инстаграм</a></li>
       </ul>
-        <b class="footer-social_sentence">Давайте дружить, это выгодно!</b>
-        <p class="footer-social_text">Скидка 10% для друзей из социальных сетей.</p>
+        <b class="footer__sentence-title">Давайте дружить, это выгодно!</b>
+        <p class="footer__sentence-text">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
   </body>
 </html>

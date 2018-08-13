@@ -6,18 +6,18 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navigation">
-        <a class="header_logo">
+      <nav class="header__navigation main__navigation">
+        <a class="header__logo">
           <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип веб-студии Нёрдс">
         </a>
-        <ul class="navigation_list">
-          <li class="navigation_item"><a href="#">Студия</a></li>
-          <li class="navigation_item"><a href="#">Клиенты</a></li>
-          <li class="navigation_item"><a href="catalog.html">Магазин</a></li>
-          <li class="navigation_item"><a href="#">Контакты</a></li>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#">Студия</a></li>
+          <li class="navigation__item"><a href="#">Клиенты</a></li>
+          <li class="navigation__item"><a href="catalog.html">Магазин</a></li>
+          <li class="navigation__item"><a href="#">Контакты</a></li>
         </ul>
-        <ul class="navigation-extra_list">
-          <li class="navigation-extra_item"><a href="#">Корзина</a></li>
+        <ul class="navigation__extra-list">
+          <li class="navigatio__extra-item"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -25,106 +25,106 @@
 
       <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
 
-      <section class="slider">
+      <section class="promo-slider">
            <input type="radio" id="btn-1" name="toggle" checked>
            <input type="radio" id="btn-2" name="toggle">
            <input type="radio" id="btn-3" name="toggle">
-           <div class="slider_controls">
+           <div class="promo-slider__controls">
              <label for="btn-1"></label>
              <label for="btn-2"></label>
              <label for="btn-3"></label>
            </div>
-           <ul class="slides">
-             <li class="slide">
-                  <b class="slide_title">Долго, дорого,<br>скрупулезно</b>
-                  <p class="slide_text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-                  <a class="button slide_link" href="#">Узнать больше</a>
+           <ul class="promo-slider promo-slider__slides">
+             <li class="promo-slide">
+                  <b class="promo-slide__title">Долго, дорого,<br>скрупулезно</b>
+                  <p class="promo-slide__text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                  <a class="button promo-slide__link" href="#">Узнать больше</a>
              </li>
-             <li class="slide">
-                  <b class="slide_title">Любим математику как никто другой</b>
-                  <p class="slide_text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                  <a class="button slide_link" href="#">Узнать больше</a>
+             <li class="promo-slide">
+                  <b class="promo-slide__title">Любим математику как никто другой</b>
+                  <p class="promo-slide__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                  <a class="button promo-slide__link" href="#">Узнать больше</a>
              </li>
-             <li class="slide">
-                  <b class="slide_title">Только ночь,<br>только хардкор</b>
-                  <p class="slide_text">Работать днем, как все? Мы против этого,<br> Ближе к полуночи работа только начинается.</p>
-                  <a class="button slide_link" href="#">Узнать больше</a>
+             <li class="promo-slide">
+                  <b class="promo-slide__title">Только ночь,<br>только хардкор</b>
+                  <p class="promo-slide__text">Работать днем, как все? Мы против этого,<br> Ближе к полуночи работа только начинается.</p>
+                  <a class="button promo-slide__link" href="#">Узнать больше</a>
              </li>
            </ul>
       </section>
 
       <section class="services">
-        <ul class="services_list">
-          <li class="services_item">
-            <h2 class="services_title --web">Веб-сайты</h2>
-            <p class="services_text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button services-web-site-color --position_button" href="#">Заказать</a>
+        <ul class="services__list">
+          <li class="services__item">
+            <h2 class="services__title services__title--web">Веб-сайты</h2>
+            <p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button services-web-site__link services-web-site__link--color" href="#">Заказать</a>
           </li>
           <li class="services_item">
-            <h2 class="services_title --app">Приложения</h2>
-            <p class="services_text">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button services-app-color --position_button" href="#">Заказать</a>
+            <h2 class="services__title services__title--app">Приложения</h2>
+            <p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button services-app__link services-app__link--color" href="#">Заказать</a>
           </li>
-          <li class="services_item">
-            <h2 class="services_title --presentation">Презентация</h2>
-            <p class="services_text">Вы даже не подозреваете, на сколько вы изумительный!</p>
-            <a class="button  services-presentation-color --position_button" href="#">Заказать</a>
+          <li class="services__item">
+            <h2 class="services__title services__title--presentation">Презентация</h2>
+            <p class="services__text">Вы даже не подозреваете, на сколько вы изумительный!</p>
+            <a class="button  services-presentation__link services-presentation__link--color" href="#">Заказать</a>
           </li>
         </ul>
       </section>
 
       <section class="about-us">
         <div class="brief-info">
-          <h2 class="brief-info_title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-          <p class="brief-info_text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <b class="brief-info_title">Выполняем заказы на разработку:</b>
-          <ul class="brief-info_list">
-          <li class="brief-info_item">Веб-сайтов любой сложности</li>
-          <li class="brief-info_item">Мобильных приложений для iOS и Android</li>
-          <li class="brief-info_item">Слайдшоу и видео для корпоративных презентаций</li>
+          <h2 class="brief-info__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p class="brief-info__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <b class="brief-info__title">Выполняем заказы на разработку:</b>
+          <ul class="brief-info__list">
+          <li class="brief-info__item">Веб-сайтов любой сложности</li>
+          <li class="brief-info__item">Мобильных приложений для iOS и Android</li>
+          <li class="brief-info__item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <div class="features">
           <h2 class="visually-hidden">Преимущества</h2>
-          <img class="features_logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип веб-студии Нёрдс">
-          <b class="features-heading">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</b>
-          <dl class="features_list">
-            <dt class="features_item">Уровень самоотдачи</dt>
-            <dd class="features_text">146%</dd>
-            <dt class="features_item">Соблюдение сроков</dt>
-            <dd class="features_text">100%</dd>
-            <dt class="features_item">Миниальная предоплата</dt>
-            <dd class="features_text">50%</dd>
+          <img class="features__logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип веб-студии Нёрдс">
+          <b class="features__heading">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</b>
+          <dl class="feature__list">
+            <dt class="features__item">Уровень самоотдачи</dt>
+            <dd class="features__text">146%</dd>
+            <dt class="features__item">Соблюдение сроков</dt>
+            <dd class="features__text">100%</dd>
+            <dt class="features__item">Миниальная предоплата</dt>
+            <dd class="features__text">50%</dd>
           </dl>
         </div>
       </section>
 
       <section class="collab">
-        <ul class="collab_list">
-          <li class="collab_item"><img src="http://placehold.it/150x100" alt="html academy logo"></li>
-          <li class="collab_item"><img src="http://placehold.it/150x100" alt="Borodinski logo"></li>
-          <li class="collab_item"><img src="http://placehold.it/150x100" alt="PINK logo"></li>
-          <li class="collab_item"><img src="http://placehold.it/150x100" alt="MISHKA logo"></li>
+        <ul class="collab__list">
+          <li class="collab__item"><img src="http://placehold.it/150x100" alt="html academy logo"></li>
+          <li class="collab__item"><img src="http://placehold.it/150x100" alt="Borodinski logo"></li>
+          <li class="collab__item"><img src="http://placehold.it/150x100" alt="PINK logo"></li>
+          <li class="collab__item"><img src="http://placehold.it/150x100" alt="MISHKA logo"></li>
         </ul>
       </section>
 
       <section class="contacts">
         <span class="script-map"></span>
-        <h2 class="contacts_title">NЁRDS DESIGN STUDIO</h2>
-        <p class="contacts_text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts_text">тел. +7 (812) 275-75-75</p>
-        <a class="button contacts_link" href="#">Напишите нам</a>
+        <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
+        <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contacts__text">тел. +7 (812) 275-75-75</p>
+        <a class="button contacts__link" href="#">Напишите нам</a>
       </section>
 
     </main>
     <footer class="footer">
-      <ul class="footer-social">
-        <li class="button footer-social_link"><a href="#">Вконтакте</a></li>
-        <li class="button footer-social_link"><a href="#">Фейсбук</a></li>
-        <li class="button footer-social_link"><a href="#">Инстаграм</a></li>
+      <ul class="site-footer social">
+        <li class="button social__link--vk"><a href="#">Вконтакте</a></li>
+        <li class="button social__link--fb"><a href="#">Фейсбук</a></li>
+        <li class="button social__link--insta"><a href="#">Инстаграм</a></li>
       </ul>
-        <b class="footer-social_sentence">Давайте дружить, это выгодно!</b>
-        <p class="footer-social_text">Скидка 10% для друзей из социальных сетей.</p>
+        <b class="footer__sentence-title">Давайте дружить, это выгодно!</b>
+        <p class="footer__sentence-text">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
   </body>
 </html>
