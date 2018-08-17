@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -114,6 +115,25 @@
         <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="contacts__text">тел. +7 (812) 275-75-75</p>
         <a class="button contacts__link" href="#">Напишите нам</a>
+      </section>
+
+      <section class="feedback">
+        <h2 class="feedback__title">Напишите нам</h2>
+        <div class="feedback entry-field__name">
+          <label for="user-name">Ваше имя:</label>
+          <p><input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия"></p>
+        </div>
+        <div class="feedback entry-field__email">
+          <label for="emeil">Ваш e-mail:</label>
+          <p><input type="text" id="email" name="emeil" placeholder="email@example.com"></p>
+        </div>
+        <div class=" feedback entry-field__review">
+          <label for="review">Текст письма:</label>
+          <p><textarea id="review" rows="5" placeholder="В свободной форме"></textarea></p>
+        </div>
+        <div class="feedback entry-field__button">
+          <input type="submit" value="Отправить">
+        </div>
       </section>
 
     </main>
