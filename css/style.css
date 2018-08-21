@@ -56,10 +56,14 @@ a {
   line-height: 55px;
 }
 
-.promo-slider__list:first-child::after {
+.promo-slider__link::after {
   content: "";
   background-image: url("../img/slide1.png") no-repeat;
   background-color: #eeeeee;
+  position: absolute;
+  display: inline-block;
+  width: 698px;
+  height: 413px;
 }
 
 .button {
