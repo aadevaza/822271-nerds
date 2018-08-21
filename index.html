@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+    <div class="header-color">
     <header class="header">
       <nav class="header__navigation main-navigation">
         <a class="header__logo">
@@ -27,14 +29,6 @@
       <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
 
       <section class="promo-slider">
-           <input type="radio" id="btn-1" name="toggle" checked>
-           <input type="radio" id="btn-2" name="toggle">
-           <input type="radio" id="btn-3" name="toggle">
-           <div class="promo-slider__controls">
-             <label for="btn-1"></label>
-             <label for="btn-2"></label>
-             <label for="btn-3"></label>
-           </div>
            <ul class="promo-slider__list">
              <li class="promo-slider__item item-slider">
                   <b class="item-slider__title">Долго, дорого,<br>скрупулезно</b>
@@ -52,7 +46,16 @@
                   <a class="button item-slider__link" href="#">Узнать больше</a>
              </li>
            </ul>
+           <input type="radio" id="btn-1" name="toggle" checked>
+           <input type="radio" id="btn-2" name="toggle">
+           <input type="radio" id="btn-3" name="toggle">
+           <div class="promo-slider__controls">
+             <label for="btn-1"></label>
+             <label for="btn-2"></label>
+             <label for="btn-3"></label>
+           </div>
       </section>
+    </div>
 
       <section class="services">
         <ul class="services__list">
