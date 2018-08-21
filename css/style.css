@@ -56,18 +56,73 @@ a {
   line-height: 55px;
 }
 
-.promo-slider__link::after {
-  content: "";
-  background-image: url("../img/slide1.png") no-repeat;
-  background-color: #eeeeee;
-  position: absolute;
-  display: inline-block;
+.item-slider__link {
+  width: 240px;
+  height: 50px;
+}
+.promo-slider__item {
   width: 698px;
   height: 413px;
+  background-color: #eeeeee;
 }
 
+.promo-slider__item--slide1 {
+  background-image: url("../img/slide1.png");
+}
+
+.promo-slider__item--slide2 {
+  background-image: url("../img/slide2.png");
+}
+
+.promo-slider__item--slide3 {
+  background-image: url("../img/slide3.png");
+}
 .button {
   background-color: #fb565a;
   color: #ffffff;
   text-transform: uppercase;
+  border: none;
+
+
+}
+
+.item-slider__link {
+  padding: 20px 55px;
+}
+
+.services__list {
+  list-style: none;
+}
+.services__title--web::before {
+  content:"s";
+  width: 300px;
+  height: 146px;
+  position: relative;
+  display: block;
+  background-image: url(..img/illustration-1.png);
+}
+
+.services__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.services__link {
+  padding: 20px 40px;
+}
+
+.button--red {
+  background-color: #fb565a;
+}
+
+.button--green {
+  background-color: #00ca74;
+}
+
+.button--yellow {
+  background-color: #efc84a;
+}
+
+.about-us::before {
+  content
 }
