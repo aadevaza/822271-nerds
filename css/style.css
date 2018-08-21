@@ -27,11 +27,13 @@ a {
   color: #000000;
   background-color: #eeeeee;
   text-transform: uppercase;
+  
 }
 
 .main-navigation__list,
 .main-navigation__extra-list {
   list-style: none;
+
 }
 
 .main-navigation__list a,
@@ -87,6 +89,15 @@ a {
   text-transform: uppercase;
   border: none;
   text-align: center;
+  border-radius: 3px;
+}
+
+.button:hover{
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
 }
 
 .item-slider__link {
@@ -112,7 +123,7 @@ a {
   height: 146px;
   position: relative;
   display: block;
-  background-image: url(../img/illustration-1.png);
+  background-image: url("../img/illustration-1.png");
 }
 
 .services__title--app::before {
@@ -121,7 +132,7 @@ a {
   height: 146px;
   position: relative;
   display: block;
-  background-image: url(../img/illustration-2.png);
+  background-image: url("../img/illustration-2.png");
 }
 
 .services__title--presentation::before {
@@ -130,7 +141,7 @@ a {
   height: 146px;
   position: relative;
   display: block;
-  background-image: url(../img/illustration-3.png);
+  background-image: url("../img/illustration-3.png");
 }
 
 .services__title {
@@ -147,8 +158,7 @@ a {
   background-color: #fb565a;
 }
 
-.button--red:hover,
-.button--red:focus{
+.button--red:hover{
   background-color: #e74246;
 }
 
@@ -160,8 +170,7 @@ a {
   background-color: #00ca74;
 }
 
-.button--green:hover,
-.button--green:focus{
+.button--green:hover{
   background-color: #00bc6c;
 }
 
@@ -173,8 +182,7 @@ a {
   background-color: #efc84a;
 }
 
-.button--yellow:hover,
-.button--yellow:focus{
+.button--yellow:hover{
   background-color: #eab534;
 }
 
@@ -251,6 +259,10 @@ a {
   padding-left: 15px;
 }
 
+.input-form input:focus {
+  border-color: #000000;
+}
+
 .input-form textarea {
   border: 1px solid lightgray;
   border-radius: 3px;
@@ -259,6 +271,10 @@ a {
   resize: none;
   padding-top: 15px;
   padding-left: 15px;
+}
+
+.input-form textarea:focus {
+  border-color: #000000;
 }
 
 .input-form button {
@@ -289,4 +305,149 @@ a {
   list-style: none;
   padding-bottom: 49px;
   padding-top: 44px;
+}
+
+.filter input {
+  background-color: #eeeeee;
+}
+
+input[type="range"] {
+  width: 219px;
+}
+
+.filter input[type="text"] {
+  width: 80px;
+  height: 40px;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.filter fieldset {
+  border: 0 none;
+}
+
+.filter__range-scale {
+  height: 80px;
+  width: 260px;
+  background-color: #eeeeee;
+  border-radius: 3px;
+}
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.filter legend {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  width: 260px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  color: #000000;
+  font-weight: bold;
+}
+
+.catalog__list {
+  list-style: none;
+}
+
+.catalog__title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.catalog-sorting {
+  list-style: none;
+}
+
+.catalog-sorting__item a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #b2b2b2;
+}
+
+.catalog-sorting__item a:active {
+  color: #000000;
+}
+
+.catalog-sorting__item--updown {
+  background-image: url("../img/svg/icon-up-dir.svg"),
+                    url("../img/svg/icon-down-dir.svg");
+
+}
+
+.catalog-hover {
+  width: 360px;
+  height: 231px;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.catalog-hover__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog-hover__item {
+  font-size: 16px;
+  line-height: 18px;
+  color: #cacaca;
+  text-align: center;
+}
+
+.catalog-hover__link {
+  padding: 20px 60px;
+  border-radius: 3px;
+}
+
+.paginator {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+}
+
+.paginator li {
+  display: inline;
+}
+
+.paginator a {
+  color: #000000;
+  background-color: #eeeeee;
+  margin-right: 11px;
+  padding: 20px 30px;
+  border-radius: 3px;
+}
+
+.paginator a:hover {
+  background-color: #dfdfdf;
+}
+
+.paginator a:active {
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+}
+
+.paginator__item--next {
+  padding: 20px 130px;
 }

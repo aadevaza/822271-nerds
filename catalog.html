@@ -26,14 +26,15 @@
     </header>
     <main class="container">
 
-    <h1 class="page-title">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
+    <h1 class="page-title">Магазин готовых шабловон</h1>
     </div>
       <section class="filter">
         <form action="#" method="post">
           <fieldset class="filter__price">
             <legend class="filter__title">Стоимость:</legend>
-            <div class="filter__range-scale"></div>
+            <div class="filter__range-scale">
                 <input type="range" min="0" max="15000">
+            </div>
                   <label>
                     от <input type="text" value="0">
                   </label>
@@ -70,11 +71,11 @@
             <input type="checkbox" id="basket" name="basket">
             <label for="basket">Корзина</label>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
       <section class="catalog">
-      </b class="catalog__title">Сортировать:<b>
+      <b class="catalog__title">Сортировать:</b>
         <ul class="catalog-sorting">
           <li class="catalog-sorting__item"><a href="#">По цене</a></li>
           <li class="catalog-sorting__item"><a href="#">По типу</a></li>
@@ -95,7 +96,7 @@
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">PINK APP</h2>
               <p class="catalog-hover__item">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button catalog-hover__link">9900 РУБ.</a>
+              <a class="button catalog-hover__link" href="#">9900 РУБ.</a>
             </div>
           </li>
           <li class="catalog__item">
@@ -103,7 +104,7 @@
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">BARBERSHOP</h2>
               <p class="catalog-hover__item">Сайт салона красоты. Для мужчин, да.</p>
-              <a class="button catalog-hover__link">9900 РУБ.</a>
+              <a class="button catalog-hover__link" href="#">9900 РУБ.</a>
             </div>
           </li>
           <li class="catalog__item">
@@ -111,7 +112,7 @@
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">MISHKA</h2>
               <p class="catalog-hover__item">Интернет-магазин вязанных игрушек</p>
-              <a class="button catalog-hover__link">9900 РУБ.</a>
+              <a class="button catalog-hover__link" href="#">9900 РУБ.</a>
             </div>
           </li>
           <li class="catalog__item">
@@ -119,7 +120,7 @@
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">A PLUS</h2>
               <p class="catalog-hover__item">Лендинг курсов повышения квалификации</p>
-              <a class="button catalog-hover__link">9900 РУБ.</a>
+              <a class="button catalog-hover__link" href="#">9900 РУБ.</a>
             </div>
           </li>
           <li class="catalog__item">
@@ -127,7 +128,7 @@
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">КВАСТ</h2>
               <p class="catalog-hover__item">Промо-сайт производителя крафтового кваса</p>
-              <a class="button catalog-hover__link">9900 РУБ.</a>
+              <a class="button catalog-hover__link" href="#">9900 РУБ.</a>
             </div>
           </li>
         </ul>
@@ -148,7 +149,7 @@
 
       <section class="feedback">
         <h2 class="feedback__title">Напишите нам</h2>
-        <form class="feedback__form input-form" action="http://echo.htmlacademy.ru" method="post">
+        <form class="feedback__form input-form" action="http://echo.htmlacademy.ru" method="get">
           <p class="input-form__name">
             <label for="user-name">Ваше имя:</label>
             <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
@@ -161,7 +162,7 @@
             <label for="review">Текст письма:</label>
             <textarea id="review" rows="5" placeholder="В свободной форме"></textarea>
           </p>
-          <button type="submit">Отправить</button>
+          <button class="button form-button" type="submit">Отправить</button>
         </form>
       </section>
 
