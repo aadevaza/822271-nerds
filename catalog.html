@@ -16,7 +16,7 @@
         <ul class="main-navigation__list">
           <li class="main-navigation__item"><a href="#">Студия</a></li>
           <li class="main-navigation__item"><a href="#">Клиенты</a></li>
-          <li class="main-navigation__item"><a>Магазин</a></li>
+          <li class="main-navigation__item main-navigation__item--active"><a>Магазин</a></li>
           <li class="main-navigation__item"><a href="#">Контакты</a></li>
         </ul>
         <ul class="main-navigation__extra-list">
@@ -133,7 +133,7 @@
           </li>
         </ul>
         <ul class="paginator">
-          <li class="paginator__item"><a href="#">1</a></li>
+          <li class="paginator__item paginator__item--active"><a href="#">1</a></li>
           <li class="paginator__item"><a href="#">2</a></li>
           <li class="paginator__item"><a href="#">3</a></li>
           <li class="paginator__item paginator__item--next"><a href="#">Следующая</a></li>
@@ -152,17 +152,17 @@
         <form class="feedback__form input-form" action="http://echo.htmlacademy.ru" method="get">
           <p class="input-form__name">
             <label for="user-name">Ваше имя:</label>
-            <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+            <input type="text" id="user-name" name="user-name" pattern="^[a-zA-Z]+$" placeholder="Имя Фамилия" required>
           </p>
           <p class="input-form__email">
             <label for="emeil">Ваш e-mail:</label>
-            <input type="text" id="email" name="emeil" placeholder="email@example.com">
+            <input type="email" id="email" name="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="email@example.com" required>
           </div>
           <p class="input-form__review">
             <label for="review">Текст письма:</label>
             <textarea id="review" rows="5" placeholder="В свободной форме"></textarea>
           </p>
-          <button class="button form-button" type="submit">Отправить</button>
+          <button class="button input-form__button" type="submit">Отправить</button>
         </form>
       </section>
 
