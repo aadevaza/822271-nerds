@@ -274,7 +274,7 @@ a {
 
 .input-form input:invalid {
   color: #e74246;;
-  background-color: #e74246;
+  border-color: #e74246;
 }
 
 .input-form textarea {
