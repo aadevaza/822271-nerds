@@ -42,10 +42,18 @@ a {
 }
 
 .main-navigation__item--active {
-  border-bottom: 2px solid #fb565a;
-  width: 78px;
+  position: relative;
+  width: 100px;
 }
 
+
+.main-navigation__item--active::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: red;
+}
 
 .main-navigation__list a:focus,
 .main-navigation__list a:hover,
@@ -179,6 +187,7 @@ a {
 
 .button--green:active {
   background-color: #00aa62;
+  box-shadow: inset 0 3px 0 0 #009958;
 }
 
 .button--yellow {
@@ -191,6 +200,7 @@ a {
 
 .button--yellow:active {
   background-color: #e5a722;
+  box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
 .about-us {
@@ -478,12 +488,13 @@ input[type="range"] {
   color: #000000;
   background-color: #eeeeee;
   margin-right: 11px;
-  padding: 17px 27px;
-  border-radius: 3px;
+  padding: 20px 30px;
+
 }
 
 .paginator__item--active a{
   background-color: #ffffff;
+  padding: 17px 27px;
   border: 3px solid #dbdbdb;
 }
 .paginator__item a:hover {
