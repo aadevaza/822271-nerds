@@ -535,6 +535,15 @@ input[type="range"] {
 }
 
 /*--сетка--*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 1200px;
@@ -564,5 +573,5 @@ input[type="range"] {
   display: flex;
 background: red;
   padding-top: 49px;
-  padding-left: 65px;
+  padding-left: 46px;
 }
