@@ -9,8 +9,7 @@
   </head>
   <body>
     <div class="header-color">
-    <header class="header">
-<div class="wrapper">
+    <header class="header wrapper">
       <nav class="header__navigation main-navigation">
         <a class="header__logo">
           <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии Нёрдс">
@@ -26,7 +25,6 @@
           <li class="main-navigation__extra-item"><a href="#">Корзина</a></li>
         </ul>
       </nav>
-</div>
     </header>
     <main class="container">
 
@@ -40,9 +38,11 @@
                   <a class="button item-slider__link" href="#">Узнать больше</a>
              </li>
              <li class="promo-slider__item promo-slider__item--slide2 item-slider">
-                  <b class="item-slider__title">Любим математику как никто другой</b>
-                  <p class="item-slider__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+
+                  <b class="item-slider__title">Любим математику<br> как никто другой</b>
+                  <p class="item-slider__text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
                   <a class="button item-slider__link" href="#">Узнать больше</a>
+
              </li>
              <li class="promo-slider__item promo-slider__item--slide3 item-slider">
                   <b class="item-slider__title">Только ночь,<br>только хардкор</b>
@@ -61,14 +61,14 @@
       </section>
     </div>
 
-      <section class="services">
+      <section class="services wrapper">
         <ul class="services__list">
           <li class="services__item">
             <h2 class="services__title services__title--web">Веб-сайты</h2>
             <p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button services__link button--red" href="#">Заказать</a>
           </li>
-          <li class="services_item">
+          <li class="services__item">
             <h2 class="services__title services__title--app">Приложения</h2>
             <p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="button services__link button--green" href="#">Заказать</a>
@@ -81,11 +81,11 @@
         </ul>
       </section>
 
-      <section class="about-us">
+      <section class="about-us wrapper">
         <div class="brief-info">
           <h2 class="brief-info__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p class="brief-info__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <b class="brief-info__header">Выполняем заказы на разработку:</b>
+          <h3 class="brief-info__header">Выполняем заказы на разработку:</h3>
           <ul class="brief-info__list">
           <li class="brief-info__item">Веб-сайтов любой сложности</li>
           <li class="brief-info__item">Мобильных приложений для iOS и Android</li>
@@ -97,17 +97,17 @@
           <img class="features__logo" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип веб-студии Нёрдс">
           <p class="features__heading">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
           <dl class="features__list">
-            <dt class="features__term">Уровень самоотдачи</dt>
-            <dd class="features__determination">146%</dd>
-            <dt class="features__term">Соблюдение сроков</dt>
-            <dd class="features__determination">100%</dd>
-            <dt class="features__term">Миниальная предоплата</dt>
-            <dd class="features__determination">50%</dd>
+            <div class="xyn9"><dt class="features__term">Уровень самоотдачи</dt>
+            <dd class="features__determination">146%</dd></div>
+            <div class="xyn9"><dt class="features__term">Соблюдение сроков</dt>
+            <dd class="features__determination">100%</dd></div>
+            <div class="xyn9"><dt class="features__term">Миниальная предоплата</dt>
+            <dd class="features__determination">50%</dd></div>
           </dl>
         </div>
       </section>
 
-      <section class="collab">
+      <section class="collab wrapper">
         <ul class="collab__list">
           <li class="collab__item"><img src="img/logo-1.png" width="199" height="68px" alt="html academy logo"></li>
           <li class="collab__item"><img src="img/logo-2.png" width="209" height="90"  alt="Borodinski logo"></li>
@@ -116,12 +116,14 @@
         </ul>
       </section>
 
-      <section class="contacts">
-        <span class="script-map"></span>
+      <section class="contacts ">
+        <div class=" contacts__block wrapper">
+          <span class="script-map"></span>
         <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
         <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="contacts__text">тел. +7 (812) 275-75-75</p>
         <a class="button contacts__link" href="#">Напишите нам</a>
+      </div>
       </section>
 
       <section class="feedback">
@@ -144,7 +146,7 @@
       </section>
 
     </main>
-    <footer class="footer">
+    <footer class="footer wrapper">
       <ul class="social">
         <li class="social__link social__link--vk"><a href="#">Вконтакте</a></li>
         <li class="social__link social__link--fb"><a href="#">Фейсбук</a></li>
