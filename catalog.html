@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="header-color">
-    <header class="header">
+    <header class="header wrapper">
       <nav class="header-navigation main-navigation">
         <a href="index.html" class="header__logo">
           <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии Нёрдс">
@@ -28,6 +28,8 @@
 
     <h1 class="page-title">Магазин готовых шабловон</h1>
     </div>
+
+    <div class="cat wrapper">
       <section class="filter">
         <form action="#" method="post">
           <fieldset class="filter__box">
@@ -41,7 +43,7 @@
                   <label>
                     до <input type="text" value="15000">
                   </label>
-                </div>
+
           </fieldset>
           <fieldset class="filter__box">
             <legend class="filter__title">Сетка:</legend>
@@ -74,7 +76,9 @@
           <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
+
       <section class="catalog">
+    <div class="prosto">
       <b class="catalog__title">Сортировать:</b>
         <ul class="catalog-sorting">
           <li class="catalog-sorting__item"><a href="#">По цене</a></li>
@@ -82,6 +86,7 @@
           <li class="catalog-sorting__item"><a href="#">По названию</a></li>
           <li class="catalog-sorting__item catalog-sorting__item--updown"></li>
         </ul>
+    </div>
         <ul class="catalog__list">
           <li class="catalog__item">
             <img src="img/img-sedona.jpg" width="360" height="576" alt="Пример работы, сайт — Sedona">
@@ -139,12 +144,15 @@
           <li class="paginator__item paginator__item--next"><a href="#">Следующая</a></li>
         </ul>
       </section>
+      </div>
       <section class="contacts">
+      <div class=" contacts__block wrapper">
         <span class="script-map"></span>
         <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
         <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="contacts__text">тел. +7 (812) 275-75-75</p>
         <a class="button contacts__link" href="#">Напишите нам</a>
+      </div>
       </section>
 
       <section class="feedback">
@@ -165,16 +173,18 @@
           <button class="button input-form__button" type="submit">Отправить</button>
         </form>
       </section>
-
+   </div>
     </main>
-    <footer class="footer">
+    <footer class="footer wrapper">
       <ul class="social">
         <li class="social__link social__link--vk"><a href="#">Вконтакте</a></li>
         <li class="social__link social__link--fb"><a href="#">Фейсбук</a></li>
         <li class="social__link social__link--insta"><a href="#">Инстаграм</a></li>
       </ul>
+      <div class="foot">
         <b class="footer__sentence-title">Давайте дружить, это выгодно!</b>
         <p class="footer__sentence-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
   </body>
 </html>

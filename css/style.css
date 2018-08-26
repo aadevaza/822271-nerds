@@ -41,20 +41,6 @@ a {
   outline: none;
 }
 
-.main-navigation__item--active {
-  position: relative;
-  width: 100px;
-}
-
-
-.main-navigation__item--active::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 2px;
-  background-color: red;
-}
-
 .main-navigation__list a:focus,
 .main-navigation__list a:hover,
 .main-navigation__extra-list a:focus,
@@ -390,6 +376,8 @@ input[type="range"] {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 110px;
 }
 
 .filter__title {
@@ -708,6 +696,77 @@ html {
   width: 320px;
   height: 330px;
   background: white;
-  background-position: center;
+  background-position: left center;
   margin-left: 140px;
+}
+
+.footer {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  padding: 0;
+
+}
+
+.social__link,
+.foot {
+  padding-top: 80px;
+}
+
+.filter {
+  width: 260px;
+}
+
+.filter__box {
+  padding: 0;
+  margin: 0;
+}
+.catalog {
+  width: 760px;
+  margin-left: auto;
+}
+
+.cat {
+  display: flex;
+}
+
+.prosto {
+  display: flex;
+}
+
+.catalog-sorting {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.filter,
+.catalog {
+  padding-top: 20px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.catalog__item {
+  height: 616px;
+}
+.catalog__item::before {
+  content: "";
+  width: 360px;
+  height: 40px;
+  position: absolute;
+  background-color: #eeeeee;
+}
+
+.catalog-hover {
+  display: none;
 }
