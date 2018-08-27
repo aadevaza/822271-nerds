@@ -63,8 +63,6 @@ a {
 }
 
 .promo-slider__item {
-  width: 698px;
-  height: 413px;
   background-color: #eeeeee;
 }
 
@@ -342,6 +340,15 @@ a {
   padding-top: 44px;
 }
 
+.collab__item:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.collab__item:active {
+  opacity: 0.2;
+}
+
 .filter input {
   background-color: #eeeeee;
 }
@@ -497,6 +504,7 @@ input[type="range"] {
   margin-right: 11px;
   padding: 20px 30px;
   outline: none;
+  border-radius: 3px;
 
 }
 
@@ -511,10 +519,10 @@ input[type="range"] {
   background-color: #dfdfdf;
 }
 
-.paginator__item a:active, {
+.paginator__item a:active {
   background-color: #d5d5d5;
-  color: #b7b7b7;
   box-shadow: inset 0 3px 0 0 #bfbfbf;
+
 }
 
 /*--сетка--*/
@@ -535,7 +543,8 @@ html {
 }
 
 .header {
-  margin-bottom: 9px;
+  padding-bottom: 1px;
+  padding-top: 49px;
 }
 .header-logo {
   width: 440px;
@@ -561,7 +570,7 @@ html {
 .main-navigation {
   display: flex;
   /*outline: 1px solid red;*/
-  padding-top: 49px;
+
   align-items: flex-end;
   flex-direction: row;
 
@@ -587,6 +596,7 @@ html {
   background-position: right;
   margin-right: 70px;
   padding-top: 60px;
+  padding-bottom: 95px;
 }
 
 .promo-slider__item--slide2{
@@ -601,24 +611,28 @@ html {
   display: none;
 }
 
+.services {
+  padding-top: 59px;
+}
+
 .services__list {
   width: 1102px;
   margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
 }
 
 .services__item {
   width: 303px;
   background-position: top;
-  padding-top: 59px;
 }
 
 .services__title {
-  padding-bottom: 20px;
-  padding-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .services__text {
@@ -630,10 +644,6 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 0;
-}
-
-.brief-info,
-.features    {
   padding-top: 133px;
 }
 
@@ -675,6 +685,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 0;
   padding-top: 95px;
   margin-bottom: 113px;
@@ -704,17 +715,13 @@ html {
   width: 960px;
   display: flex;
   justify-content: space-between;
+  padding-top: 80px;
 }
 
 .social {
   display: flex;
   padding: 0;
 
-}
-
-.social__link,
-.foot {
-  padding-top: 80px;
 }
 
 .filter {
@@ -754,17 +761,6 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-}
-
-.catalog__item {
-  height: 616px;
-}
-.catalog__item::before {
-  content: "";
-  width: 360px;
-  height: 40px;
-  position: absolute;
-  background-color: #eeeeee;
 }
 
 .catalog-hover {
