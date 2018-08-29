@@ -601,9 +601,9 @@ html {
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
+  background-position: right top;
   padding-top: 70px;
-  padding-bottom: 95px;
+  padding-bottom: 82px;
 }
 
 .promo-slider__item--slide2{
@@ -615,7 +615,7 @@ html {
 }
 
 .promo-slider input[type="radio"]{
-  display: none;
+
 }
 
 .services {
@@ -635,15 +635,16 @@ html {
 .services__item {
   width: 303px;
   background-position: top;
+  margin-top: 20px;
 }
 
 .services__title {
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 17px;
+  margin-top: 26px;
 }
 
 .services__text {
-  padding-bottom: 20px;
+  margin-bottom: 43px;
 }
 
 .about-us {
@@ -772,6 +773,30 @@ html {
 
 .catalog-hover {
   display: none;
+}
+
+.promo-slider__controls {
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 /*картинки */
