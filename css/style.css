@@ -845,18 +845,17 @@ html {
 }
 
 .footer {
-  width: 1200px;
+  width: 1140px;
   display: flex;
   justify-content: flex-start;
   margin-top: 57px;
-  margin-left: 75px;
 }
 
 .social {
   display: flex;
   justify-content: space-between;
-  width: 260px;
-
+  width: 300px;
+  margin-left: -30px;
 
   padding: 0;
 
@@ -955,7 +954,6 @@ html {
 }
 
 .social {
-  position: relative;
   margin-top: 10px;
 }
 
@@ -972,7 +970,7 @@ html {
 .foot {
   width: 800px;
   margin-top: 15px;
-  margin-left: 150px;
+  margin-left: 130px;
 }
 
 .footer__sentence-text {
