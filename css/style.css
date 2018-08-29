@@ -230,7 +230,11 @@ a {
 }
 
 .contacts__link {
-  padding: 20px 45px;
+  width: 220px;
+  height: 50px;
+  margin-top: 22px;
+  margin-left: 28px;
+  padding-top: 15px;
 }
 
 .contacts__link:focus {
@@ -326,12 +330,84 @@ a {
 
 .collab {
   list-style: none;
+  position: relative;
+}
+
+.collab::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -42px;
+  background: lightgrey;
+  margin-bottom: 400px;
+}
+
+.collab::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: lightgrey;
 }
 
 .collab__list {
   list-style: none;
-  padding-bottom: 49px;
-  padding-top: 44px;
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.collab__item {
+  position: relative;
+}
+
+.collab__item:first-child {
+  margin-top: 21px;
+  margin-left: -23px;
+}
+
+.collab__item:first-child::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 53px;
+  right: -51px;
+  background: lightgrey;
+}
+
+.collab__item:nth-child(2) {
+  margin-top: 5px;
+  margin-left: -40px;
+}
+
+.collab__item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 53px;
+  right: -33px;
+  top: 18px;
+  background: lightgrey;
+}
+
+.collab__item:nth-child(3) {
+  margin-top: 25px;
+  margin-left: -30px;
+}
+
+.collab__item:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 53px;
+  right: -60px;
+  top: -2px;
+  background: lightgrey;
+}
+
+.collab__item:last-child {
+  margin-top: 12px;
+  margin-right: -12px;
 }
 
 .collab__item:hover {
@@ -596,7 +672,7 @@ html {
 }
 
 .item-slider {
-  width: 1130px;
+  width: 1140px;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -612,10 +688,6 @@ html {
 
 .promo-slider__item--slide3 {
   display: none;
-}
-
-.promo-slider input[type="radio"]{
-
 }
 
 .services {
@@ -653,6 +725,7 @@ html {
   justify-content: space-between;
   padding: 0;
   padding-top: 133px;
+  padding-bottom: 40px;
 }
 
 .brief-info {
@@ -674,18 +747,39 @@ html {
   padding-left: 37px;
 }
 .brief-info__item:not(:first-child) {
-  padding-top: 24px;
+  margin-top: 24px;
 }
 
 .features__list {
   display: flex;
+  margin-top: 40px;
+  width: 340px;
+  justify-content: space-between;
 }
 
-.xyn9 {
+.feat-flex {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: space-between;
   width: 102px;
   text-align: left;
+
+
+}
+
+.features__determination {
+  margin-left: 0;
+}
+
+.features__term {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+.features__heading {
+  margin-top: 30px;
+  margin-left: 18px;
 }
 
 .collab__list {
@@ -695,8 +789,8 @@ html {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 0;
-  padding-top: 95px;
-  margin-bottom: 113px;
+  text-align: center;
+  margin-top: 60px;
 }
 
 .feedback {
@@ -704,30 +798,66 @@ html {
 }
 
 .contacts {
-
   width: 1440px;
-  height: 420px;
+  height: 416px;
   background-image: url("../img/map.png");
-  background-position: center;
+  background-position: 100% 38%;
+  margin-top: 120px;
+  position: relative;
+}
+
+.contacts::before {
+  content: "";
+  background: url("../img/map-marker.png");
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  top: 95px;
+  right: 450px;
+}
+
+.contacts__title {
+  margin-left: 29px;
+  margin-top: 51px;
+}
+
+.contacts__text {
+  width: 210px;
+  margin-left: 29px;
+  margin-top: 9px;
+}
+
+.contacts__text:last-of-type {
+  margin-top: 0px;
 }
 
 .contacts__block {
+  position: absolute;
   width: 320px;
-  height: 330px;
+  height: 310px;
+  top: 50px;
+  left: -45px;
   background: white;
   background-position: left center;
   margin-left: 140px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
-  width: 960px;
+  width: 1200px;
   display: flex;
-  justify-content: space-between;
-  padding-top: 80px;
+  justify-content: flex-start;
+  margin-top: 57px;
+  margin-left: 75px;
 }
 
 .social {
   display: flex;
+  justify-content: space-between;
+  width: 260px;
+
+
   padding: 0;
 
 }
@@ -777,8 +907,9 @@ html {
 
 .promo-slider__controls {
     position: absolute;
-    width: 100%;
+    width: 95px;
     bottom: -30px;
+    left: 625px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -792,7 +923,7 @@ html {
     height: 20px;
     background-color: #fff;
     border-radius: 50%;
-    margin: 3px;
+    margin: 4px;
 }
 
 .btn:hover {
@@ -807,4 +938,43 @@ html {
 }
 .main-navigation__extra-item {
   max-width: 160px;
+}
+
+.brief-info__item {
+  position: relative;
+}
+
+.brief-info__item::before {
+  content: "";
+  position: absolute;
+  background: red;
+  width: 25px;
+  height: 2px;
+  left: -36px;
+  top: 11px;
+}
+
+.social {
+  position: relative;
+  margin-top: 10px;
+}
+
+.social__link {
+  background: #e1e1e1;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot {
+  width: 800px;
+  margin-top: 15px;
+  margin-left: 150px;
+}
+
+.footer__sentence-text {
+  margin-top: 10px;
 }
