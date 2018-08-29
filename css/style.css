@@ -336,19 +336,19 @@ a {
 .collab::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 1px;
+  width: 1160px;
+  height: 2px;
   top: -42px;
-  background: lightgrey;
+  background: #eeeeee;
   margin-bottom: 400px;
 }
 
 .collab::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 1px;
-  background: lightgrey;
+  width: 1160px;
+  height: 2px;
+  background: #eeeeee;
 }
 
 .collab__list {
@@ -359,6 +359,7 @@ a {
 
 .collab__item {
   position: relative;
+  opacity: 0.5;
 }
 
 .collab__item:first-child {
@@ -372,7 +373,7 @@ a {
   width: 2px;
   height: 53px;
   right: -51px;
-  background: lightgrey;
+  background: #eeeeee;
 }
 
 .collab__item:nth-child(2) {
@@ -387,7 +388,7 @@ a {
   height: 53px;
   right: -33px;
   top: 18px;
-  background: lightgrey;
+  background: #eeeeee;
 }
 
 .collab__item:nth-child(3) {
@@ -402,7 +403,7 @@ a {
   height: 53px;
   right: -60px;
   top: -2px;
-  background: lightgrey;
+  background: #eeeeee;
 }
 
 .collab__item:last-child {
@@ -411,7 +412,7 @@ a {
 }
 
 .collab__item:hover {
-  opacity: 0.5;
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -946,7 +947,7 @@ html {
 .brief-info__item::before {
   content: "";
   position: absolute;
-  background: red;
+  background: #fb565a;
   width: 25px;
   height: 2px;
   left: -36px;
@@ -967,6 +968,19 @@ html {
   justify-content: center;
 }
 
+.social__link:hover {
+  background: #e74246;
+  cursor: pointer;
+}
+
+.social__link:active {
+  background: #d7373b;
+}
+
+.social__link path:active {
+  fill: #e37376;
+}
+
 .foot {
   width: 800px;
   margin-top: 15px;
@@ -975,4 +989,17 @@ html {
 
 .footer__sentence-text {
   margin-top: 10px;
+}
+
+.main-navigation__item--active {
+  position: relative;
+}
+
+.main-navigation__item--active::before {
+  content: "";
+  width: 75px;
+  height: 2px;
+  top: 33px;
+  position: absolute;
+  background: #fb565a;
 }
