@@ -331,6 +331,7 @@ a {
 .collab {
   list-style: none;
   position: relative;
+  margin-bottom: 120px;
 }
 
 .collab::before {
@@ -349,6 +350,7 @@ a {
   width: 1160px;
   height: 2px;
   background: #eeeeee;
+
 }
 
 .collab__list {
@@ -448,6 +450,64 @@ input[type="range"] {
   width: 260px;
   background-color: #eeeeee;
   border-radius: 3px;
+  margin-top: 45px;
+  position: relative;
+}
+
+.filter__line {
+  position: absolute;
+  width: 212px;
+  height: 2px;
+  background: #d7dcde;
+  top: 50%;
+  left: 10%;
+}
+
+.filter__line-active {
+  position: absolute;
+  width: 147px;
+  height: 2px;
+  background: #00ca74;
+  top: 50%;
+  left: 10%;
+}
+
+.filter__line-active::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  box-shadow: 0 3px 0 0 #e0e0e0;
+  top: -10px;
+  left: -10px;
+}
+
+.filter__line-active::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  box-shadow: 0 3px 0 0 #e0e0e0;
+  top: -10px;
+  right: -10px;
+}
+
+.filter__input-value {
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__input-value label:first-child {
+  margin-left: 5px;
+}
+
+.filter__input-value span {
+  margin-right: 5px;
 }
 
 .page-title {
@@ -557,12 +617,14 @@ input[type="range"] {
 .paginator {
   padding: 0;
   margin: 0;
+  margin-top: 64px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   display: inline-block;
   list-style: none;
   text-align: center;
+  margin-bottom: -60px;
 }
 
 .paginator__item {
@@ -573,15 +635,20 @@ input[type="range"] {
   color: #000000;
   background-color: #eeeeee;
   margin-right: 11px;
-  padding: 20px 30px;
+  padding: 15px 20px;
   outline: none;
   border-radius: 3px;
 
 }
 
+.paginator__item--next a {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
 .paginator__item--active a{
   background-color: #ffffff;
-  padding: 17px 27px;
+  padding: 12px 17px;
   border: 3px solid #dbdbdb;
 }
 
@@ -870,6 +937,99 @@ html {
   padding: 0;
   margin: 0;
 }
+
+.filter__box:nth-child(2) {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkbox,
+.radio {
+	display: none;
+}
+
+.checkbox-custom {
+  background: url("../img/svg/checkbox-off.svg") no-repeat;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  opacity: 0.5;
+}
+
+.radio-custom {
+	width: 25px;
+	height: 25px;
+	border: 5px solid #ccc;
+	border-radius: 2px;
+	position: relative;
+}
+
+.checkbox-custom,
+.radio-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../img/svg/checkbox-on.svg") no-repeat;
+}
+
+
+.radio:checked + .radio-custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	bottom: 3px;
+	left: 3px;
+	background: #ccc;
+	border-radius: 2px;
+}
+
+
+.checkbox-custom,
+.checkbox:checked + .checkbox-custom::before {
+  cursor: pointer;
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+	border-radius: 50%;
+  cursor: pointer;
+}
+
+.filter__radio:first-of-type {
+  margin-top: 13px;
+  margin-left: 2px;
+}
+
+.filter__radio .label {
+  margin-left: 5px;
+}
+
+.filter__radio:nth-of-type(2) {
+  margin-top: 14px;
+  margin-left: 2px;
+}
+
+.filter__radio:last-of-type {
+  margin-top: 16px;
+  margin-left: 2px;
+}
+
 .catalog {
   width: 760px;
   margin-left: auto;
@@ -879,19 +1039,58 @@ html {
   display: flex;
 }
 
-.prosto {
+.catalog-wrap {
   display: flex;
 }
 
 .catalog-sorting {
   padding: 0;
-  margin: 0;
+  margin-top: -3px;
+
+  margin-left: 260px;
+  width: 280px;
   display: flex;
+  justify-content: space-around;
 }
 
-.filter,
+
+
+.catalog-extra {
+  list-style: none;
+  display: flex;
+  margin-top: -3px;
+}
+
+.catalog-extra_down {
+  margin-left: 8px;
+}
+
+.catalog-extra_up {
+  margin-left: 18px;
+}
+
+.down {
+  transform: rotate(180deg);
+}
+
+.controller {
+  opacity: 0.2;
+}
+
+.controller:hover {
+  opacity: 0.5;
+}
+
+.controller:active {
+  opacity: 1;
+}
+
+.filter{
+  margin-top: 17px;
+}
+
 .catalog {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .catalog__list {
@@ -930,12 +1129,11 @@ html {
     cursor: pointer;
 }
 
-/*картинки */
-
 .but {
   margin-right: 23px;
   fill: #a6a6a6;
 }
+
 .main-navigation__extra-item {
   max-width: 160px;
 }
@@ -977,8 +1175,8 @@ html {
   background: #d7373b;
 }
 
-.social__link path:active {
-  fill: #e37376;
+.social__link  svg:active {
+  opacity: 0.3;
 }
 
 .foot {
@@ -1003,3 +1201,65 @@ html {
   position: absolute;
   background: #fb565a;
 }
+
+.filter__box:nth-of-type(3) {
+  margin-top: 43px;
+}
+
+.flex-filter__checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 210px;
+  margin-top: 10px;
+}
+
+.catalog__item{
+  margin-top: 60px;
+  position: relative;
+  cursor: pointer;
+}
+
+.catalog__item::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  background: #eeeeee;
+  top: -40px;
+  border-radius: 3px 3px 0 0;
+}
+
+
+.catalog__circle {
+  background: #ffffff;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: -26px;
+  left: 17px;
+  border-radius: 50%;
+}
+
+.catalog__circle::before {
+  content: "";
+  background: #ffffff;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 22px;
+  border-radius: 50%;
+}
+
+.catalog__circle::after {
+  content: "";
+  background: #ffffff;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 45px;
+  border-radius: 50%;
+}
+ .contacts-wrap {
+   margin-top: -43px;
+ }

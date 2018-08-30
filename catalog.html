@@ -5,6 +5,10 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+
   </head>
   <body>
     <div class="header-color">
@@ -39,66 +43,110 @@
     <h1 class="page-title">Магазин готовых шабловон</h1>
     </div>
 
+
     <div class="cat wrapper">
       <section class="filter">
         <form action="#" method="post">
           <fieldset class="filter__box">
             <legend class="filter__title">Стоимость:</legend>
             <div class="filter__range-scale">
-                <input type="range" min="0" max="15000">
+                <div class="filter__line"></div>
+                <div class="filter__line-active"></div>
             </div>
+                <div class="filter__input-value">
                   <label>
-                    от <input type="text" value="0">
+                    <span>ОТ</span>  <input type="text" value="0">
                   </label>
                   <label>
-                    до <input type="text" value="15000">
+                    <span>ДО</span>  <input type="text" value="15000">
                   </label>
-
+                </div>
           </fieldset>
           <fieldset class="filter__box">
             <legend class="filter__title">Сетка:</legend>
-            <input type="radio" id="adaptive" name="radio" checked>
-            <label for="adaptive">Адаптивная</label>
 
-            <input type="radio" id="fixed" name="radio">
-            <label for="fixed">Фиксированная</label>
+            <label class="filter__radio">
+                    <input class="radio" type="radio" name="radio-test" checked>
+                    <span class="radio-custom"></span>
+                    <span class="label">Адаптивная</span>
+            </label>
 
-            <input type="radio" id="rubber" name="radio">
-            <label for="rubber">Резиновая</label>
+            <label class="filter__radio">
+                    <input class="radio" type="radio" name="radio-test">
+                    <span class="radio-custom"></span>
+                    <span class="label">Фиксированная</span>
+            </label>
+
+            <label class="filter__radio">
+                    <input class="radio" type="radio" name="radio-test">
+                    <span class="radio-custom"></span>
+                    <span class="label">Резиновая</span>
+            </label>
+
           </fieldset>
           <fieldset class="filter__box">
             <legend class="filter__title">Особенности:</legend>
-            <input type="checkbox" id="slider" name="slider" checked>
-            <label for="slider">Слайдер</label>
+            <div class="flex-filter__checkbox"><label class="filter__checkbox">
+                    <input class="checkbox" type="checkbox" name="checkbox-test" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Слайдер</span>
+            </label>
 
-            <input type="checkbox" id="advantages" name="advantages">
-            <label for="advantages">Блок преимуществ</label>
+            <label class="filter__checkbox">
+                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Блок преимуществ</span>
+            </label>
 
-            <input type="checkbox" id="news" name="news" checked>
-            <label for="news">Новости</label>
+            <label class="filter__checkbox">
+                    <input class="checkbox" type="checkbox" name="checkbox-test" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Новости</span>
+            </label>
 
-            <input type="checkbox" id="gallery" name="gallery">
-            <label for="gallery">Галерея</label>
+            <label class="filter__checkbox">
+                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Галерея</span>
+            </label>
 
-            <input type="checkbox" id="basket" name="basket">
-            <label for="basket">Корзина</label>
+            <label class="filter__checkbox">
+                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Корзина</span>
+            </label>
+          </div>
           </fieldset>
           <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
 
       <section class="catalog">
-    <div class="prosto">
+    <div class="catalog-wrap">
       <b class="catalog__title">Сортировать:</b>
         <ul class="catalog-sorting">
           <li class="catalog-sorting__item"><a href="#">По цене</a></li>
           <li class="catalog-sorting__item"><a href="#">По типу</a></li>
           <li class="catalog-sorting__item"><a href="#">По названию</a></li>
-          <li class="catalog-sorting__item catalog-sorting__item--updown"></li>
         </ul>
+        <ul class="catalog-extra">
+          <li class="catalog-extra_down"><a href="#">
+            <svg class="controller down" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+            <polygon fill="#010101" points="5.5,0 0,10 11,10 "/>
+            </svg>
+          </a></li>
+          <li class="catalog-extra_up"><a href="#">
+            <svg class="controller" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+            <polygon fill="#010101" points="5.5,0 0,10 11,10 "/>
+            </svg>
+          </a></li>
+
     </div>
         <ul class="catalog__list">
           <li class="catalog__item">
+            <span class="catalog__circle"></span>
             <img src="img/img-sedona.jpg" width="360" height="576" alt="Пример работы, сайт — Sedona">
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">SEDONA</h2>
@@ -107,6 +155,7 @@
             </div>
           </li>
           <li class="catalog__item">
+            <span class="catalog__circle"></span>
             <img src="img/img-pink.jpg" width="360" height="576" alt="Пример работы, сайт — PINK">
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">PINK APP</h2>
@@ -115,6 +164,7 @@
             </div>
           </li>
           <li class="catalog__item">
+            <span class="catalog__circle"></span>
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="Пример работы, сайт — Barbershop BORODINSKI">
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">BARBERSHOP</h2>
@@ -123,6 +173,7 @@
             </div>
           </li>
           <li class="catalog__item">
+            <span class="catalog__circle"></span>
             <img src="img/img-mishka.jpg" width="360" height="576" alt="Пример работы, сайт — MISHKA">
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">MISHKA</h2>
@@ -131,6 +182,7 @@
             </div>
           </li>
           <li class="catalog__item">
+            <span class="catalog__circle"></span>
             <img src="img/img-aplus.jpg" width="360" height="576" alt="Пример работы, сайт — A+">
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">A PLUS</h2>
@@ -139,6 +191,7 @@
             </div>
           </li>
           <li class="catalog__item">
+            <span class="catalog__circle"></span>
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Пример работы, сайт — КВАСТ">
             <div class="catalog-hover">
               <h2 class="catalog-hover__title">КВАСТ</h2>
@@ -155,6 +208,7 @@
         </ul>
       </section>
       </div>
+<div class="contacts-wrap">
       <section class="contacts">
       <div class=" contacts__block wrapper">
         <span class="script-map"></span>
@@ -164,7 +218,7 @@
         <a class="button contacts__link" href="#">Напишите нам</a>
       </div>
       </section>
-
+</div>
       <section class="feedback">
         <h2 class="feedback__title">Напишите нам</h2>
         <form class="feedback__form input-form" action="http://echo.htmlacademy.ru" method="get">
@@ -188,7 +242,7 @@
     <footer class="footer wrapper">
       <ul class="social">
         <li class="social__link social__link--vk">
-          <a href="#"><span class="visually-hidden">Вконтакте</span>
+          <a href="#" aria-label="Вконтакте">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
           <path fill="#ffffff" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
@@ -204,7 +258,7 @@
           </svg>
           </a></li>
         <li class="social__link social__link--fb">
-          <a href="#"><span class="visually-hidden">Фейсбук</span>
+          <a href="#" aria-label="Фейсбук">
             <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
             <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
@@ -212,7 +266,7 @@
           </a>
         </li>
         <li class="social__link social__link--insta">
-          <a href="#"><span class="visually-hidden">Инстаграм</span>
+          <a href="#" aria-label="Инстаграм">
             <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z" fill="#fff"/>
             </svg>
           </a>
