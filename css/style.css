@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-
   Font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
+
+
 
   background: #ffffff;
   color: #000000;
@@ -53,6 +54,9 @@ a {
   color: #b4b4b4;
 }
 
+.promo-slider {
+  position: relative;
+}
 .promo-slider__list {
   list-style: none;
 }
@@ -255,7 +259,7 @@ a {
 .input-form input {
   font-size: 16px;
   line-height: 18px;
-  border: 2px solid #eeeeee;
+  border: 2px solid lightgray;
   border-radius: 3px;
   width: 343px;
   height: 48px;
@@ -331,7 +335,7 @@ a {
 .collab {
   list-style: none;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 0;
 }
 
 .collab::before {
@@ -341,7 +345,6 @@ a {
   height: 2px;
   top: -42px;
   background: #eeeeee;
-  margin-bottom: 400px;
 }
 
 .collab::after {
@@ -681,7 +684,7 @@ html {
 }
 
 .header {
-  padding-bottom: 1px;
+  padding-bottom: 0px;
   padding-top: 49px;
 }
 .header-logo {
@@ -759,7 +762,8 @@ html {
 }
 
 .services {
-  padding-top: 59px;
+  padding-top: 0px;
+  outline: 2px solid black;
 }
 
 .services__list {
@@ -775,7 +779,7 @@ html {
 .services__item {
   width: 303px;
   background-position: top;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .services__title {
@@ -862,7 +866,14 @@ html {
 }
 
 .feedback {
-  display: none;
+  position: absolute;
+  width: 960px;
+  height: 590px;
+  background: #eeeeee;
+  right: 200px;
+  top: 2450px;
+  box-shadow: ;
+
 }
 
 .contacts {
@@ -1107,8 +1118,8 @@ html {
 .promo-slider__controls {
     position: absolute;
     width: 95px;
-    bottom: -30px;
-    left: 625px;
+    bottom: 85px;
+    left: 553px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -1261,5 +1272,5 @@ html {
   border-radius: 50%;
 }
  .contacts-wrap {
-   margin-top: -43px; 
+   margin-top: -43px;
  }
