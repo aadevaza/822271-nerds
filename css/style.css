@@ -236,7 +236,6 @@ a {
 .contacts__link {
   width: 220px;
   margin-top: 22px;
-  margin-left: 28px;
   padding-top: 15px;
   padding-bottom: 13px;
 }
@@ -320,6 +319,11 @@ a {
 
 .social {
   list-style: none;
+}
+
+.footer__sentence-text{
+  margin: 0;
+  margin-top: 6px;
 }
 
 .footer__sentence-title {
@@ -491,10 +495,12 @@ input[type="range"] {
   margin-top: 17px;
   display: flex;
   justify-content: space-between;
+
 }
 
 .filter__input-value label:first-child {
   margin-left: 5px;
+
 }
 
 .filter__input-value span {
@@ -576,6 +582,7 @@ input[type="range"] {
 .catalog-hover {
   opacity: 0;
 }
+li.catalog__item:focus .catalog-hover,
 li.catalog__item:hover .catalog-hover {
   opacity: 1;
 }
@@ -697,7 +704,7 @@ html {
 
 .header {
 
-  padding-bottom: 0px;
+
   padding-top: 49px;
 }
 .header-logo {
@@ -710,6 +717,7 @@ html {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   /*outline: 1px solid yellow;*/
   margin-left: auto;
   margin-bottom: 19px;
@@ -769,7 +777,7 @@ html {
 }
 
 .services {
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
 .services__list {
@@ -780,7 +788,6 @@ html {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
-  margin-top: 10px;
 }
 
 .services__item {
@@ -841,6 +848,7 @@ html {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 102px;
   text-align: left;
 
@@ -918,14 +926,8 @@ html {
   right: 450px;
 }
 
-.contacts__title {
-  margin-left: 29px;
-  margin-top: 51px;
-}
-
 .contacts__text {
   width: 210px;
-  margin-left: 29px;
   margin-top: 9px;
 }
 
@@ -936,7 +938,7 @@ html {
 .contacts__block {
   position: absolute;
   width: 320px;
-  height: 310px;
+  padding: 40px 50px;
   top: 54px;
   left: 94px;
   background: white;
@@ -945,24 +947,10 @@ html {
 
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.footer {
-  width: 1140px;
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 57px;
-}
 
-.social {
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-  margin-left: -30px;
-
-  padding: 0;
-
-}
 
 .filter {
   width: 260px;
@@ -989,91 +977,101 @@ html {
 	display: none;
 }
 
-.checkbox-custom {
-  background: url("../img/svg/checkbox-off.svg") no-repeat;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  opacity: 0.5;
-}
 
-.radio-custom {
-	width: 25px;
-	height: 25px;
-	border: 5px solid #ccc;
-	border-radius: 2px;
-	position: relative;
-}
-
-.checkbox-custom,
-.radio-custom,
-.label {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.checkbox:checked + .checkbox-custom::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background: url("../img/svg/checkbox-on.svg") no-repeat;
-}
-
-
-.radio:checked + .radio-custom::before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 3px;
-	right: 3px;
-	bottom: 3px;
-	left: 3px;
-	background: #ccc;
-	border-radius: 2px;
-}
-
-
-.checkbox-custom,
-.checkbox:checked + .checkbox-custom::before {
-  cursor: pointer;
-}
-
-.radio-custom,
-.radio:checked + .radio-custom::before {
-	border-radius: 50%;
-  cursor: pointer;
-}
-
-.filter__radio:first-of-type {
-  margin-top: 13px;
-  margin-left: 2px;
-}
-
-.filter__radio .label {
-  margin-left: 5px;
-}
-
-.filter__radio:nth-of-type(2) {
-  margin-top: 14px;
-  margin-left: 2px;
-}
-
-.filter__radio:last-of-type {
-  margin-top: 16px;
-  margin-left: 2px;
-}
 
 .catalog {
   width: 760px;
   margin-left: auto;
 }
 
+.filter__option {
+  list-style: none;
+}
+.filter-input-radio + label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -39px;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #bfbfbf;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background:#bfbfbf;
+
+}
+
+.filter__box:nth-of-type(2) li {
+  margin-top: 17px;
+}
+
+.filter__box:nth-of-type(3) li {
+  margin-top: 17px;
+}
+
+.filter-input-checkbox + label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
 
 
+.filter-input-checkbox + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+  left: -40px;
+  opacity: 0.5;
+}
 
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+  left: -40px;
+  opacity: 0;
 
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/svg/checkbox-on.svg");
+  background-repeat: no-repeat;
+  left: -40px;
+  top: 0px;
+  opacity: 0.5;
+}
 
 .catalog-sorting {
   padding: 0;
@@ -1203,42 +1201,43 @@ margin: 0;
   top: 11px;
 }
 
-.social {
+.footer {
+  display: flex;
+  padding-top: 66px;
+}
+.foot {
+  width: 560px;
   margin-top: 10px;
+  margin-left: 140px;
 }
 
-.social__link {
-  background: #e1e1e1;
-  width: 78px;
-  height: 78px;
-  border-radius: 50%;
+.social {
+  width:260px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0;
+
+}
+
+.social__link a {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #eeeeee;
 }
 
-.social__link:hover {
-  background: #e74246;
-  cursor: pointer;
+.social__link a:hover {
+  background-color: #e74246;
 }
 
-.social__link:active {
-  background: #d7373b;
+.social__link a:active {
+  background-color: #d7373b;
 }
 
-.social__link  svg:active {
-  opacity: 0.3;
-}
-
-.foot {
-  width: 800px;
-  margin-top: 15px;
-  margin-left: 130px;
-}
-
-.footer__sentence-text {
-  margin-top: 10px;
-}
 
 .main-navigation__item--active {
   position: relative;

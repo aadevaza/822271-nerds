@@ -65,58 +65,51 @@
           </fieldset>
           <fieldset class="filter__box">
             <legend class="filter__title">Сетка:</legend>
+            <ul class="filter__option">
+              <li class="filter__option-radio">
+                    <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="radio-test" checked>
+                    <label for="adaptive">Адаптивная</label>
+              </li>
 
-            <label class="filter__radio">
-                    <input class="radio" type="radio" name="radio-test" checked>
-                    <span class="radio-custom"></span>
-                    <span class="label">Адаптивная</span>
-            </label>
+            <li class="filter__option-radio">
+                    <input class="visually-hidden filter-input filter-input-radio" id="fix" type="radio" name="radio-test">
+                    <label for="fix">Фиксированная</label>
+            </li>
 
-            <label class="filter__radio">
-                    <input class="radio" type="radio" name="radio-test">
-                    <span class="radio-custom"></span>
-                    <span class="label">Фиксированная</span>
-            </label>
-
-            <label class="filter__radio">
-                    <input class="radio" type="radio" name="radio-test">
-                    <span class="radio-custom"></span>
-                    <span class="label">Резиновая</span>
-            </label>
-
+            <li class="filter__option-radio">
+                    <input class="visually-hidden filter-input filter-input-radio" id="rubber" type="radio" name="radio-test">
+                    <label for="rubber">Резиновая</label>
+            </li>
+          </ul>
           </fieldset>
           <fieldset class="filter__box">
             <legend class="filter__title">Особенности:</legend>
-            <div class="flex-filter__checkbox"><label class="filter__checkbox">
-                    <input class="checkbox" type="checkbox" name="checkbox-test" checked>
-                    <span class="checkbox-custom"></span>
-                    <span class="label">Слайдер</span>
-            </label>
+            <ul class="filter__option">
+              <li class="filter__option-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="slider" name="checkbox-test" checked>
+                    <label for="slider">Слайдер</label>
+              </li>
 
-            <label class="filter__checkbox">
-                    <input class="checkbox" type="checkbox" name="checkbox-test">
-                    <span class="checkbox-custom"></span>
-                    <span class="label">Блок преимуществ</span>
-            </label>
+              <li class="filter__option-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="advantages" name="checkbox-test">
+                    <label for="advantages">Блок преимуществ</label>
+              </li>
 
-            <label class="filter__checkbox">
-                    <input class="checkbox" type="checkbox" name="checkbox-test" checked>
-                    <span class="checkbox-custom"></span>
-                    <span class="label">Новости</span>
-            </label>
+            <li class="filter__option-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="news" name="checkbox-test" checked>
+                    <label for="news">Новости</label>
+            </li>
 
-            <label class="filter__checkbox">
-                    <input class="checkbox" type="checkbox" name="checkbox-test">
-                    <span class="checkbox-custom"></span>
-                    <span class="label">Галерея</span>
-            </label>
+            <li class="filter__option-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="gallery" name="checkbox-test">
+                    <label for="gallery">Галерея</label>
+            </li>
 
-            <label class="filter__checkbox">
-                    <input class="checkbox" type="checkbox" name="checkbox-test">
-                    <span class="checkbox-custom"></span>
-                    <span class="label">Корзина</span>
-            </label>
-          </div>
+            <li class="filter__option-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="basket" name="checkbox-test">
+                    <label for="basket">Корзина</label>
+            </li>
+          </ul>
           </fieldset>
           <button class="button filter-button" type="submit">Показать</button>
         </form>
