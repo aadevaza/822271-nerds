@@ -543,17 +543,34 @@ input[type="range"] {
   color: #000000;
 }
 
-.catalog-sorting__item--updown {
-  background-image: url("../img/svg/icon-up-dir.svg"),
-                    url("../img/svg/icon-down-dir.svg");
+.catalog-item {
+  position: relative;
 
+}
+.catalog-hover {
+  opacity: 0;
+}
+li.catalog__item:hover .catalog-hover {
+  opacity: 1;
 }
 
 .catalog-hover {
+  position: absolute;
+  bottom: 0;
   width: 360px;
-  height: 231px;
+  min-height: 238px;
   background-color: #eeeeee;
   text-align: center;
+
+
+}
+
+.catalog-hover__flex {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+
 }
 
 .catalog-hover__title {
@@ -562,6 +579,8 @@ input[type="range"] {
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 25px;
+
 }
 
 .catalog-hover__item {
@@ -569,11 +588,15 @@ input[type="range"] {
   line-height: 18px;
   color: #cacaca;
   text-align: center;
+  margin-top: 0px;
 }
 
 .catalog-hover__link {
-  padding: 20px 60px;
+ display: block;
+ padding: 12px 0;
   border-radius: 3px;
+  margin-top: 16px;
+
 }
 
 .catalog-hover__link:focus {
@@ -892,6 +915,7 @@ html {
   left: 94px;
   background: white;
   background-position: left center;
+  z-index: 1;
 
   display: flex;
   flex-direction: column;
@@ -1103,9 +1127,7 @@ margin: 0;
   margin-top: 32px;
 }
 
-.catalog-hover {
-  display: none;
-}
+
 
 .promo-slider__controls {
     position: absolute;
@@ -1223,13 +1245,17 @@ margin: 0;
   cursor: pointer;
 }
 
+.catalog__item:hover::before {
+  background: #4d4d4d;
+}
+
 .catalog__item::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 40px;
   background: #eeeeee;
-  top: -40px;
+  top: -39px;
   border-radius: 3px 3px 0 0;
 }
 

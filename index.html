@@ -128,7 +128,7 @@
         </ul>
       </section>
 
-      <section class="contacts ">
+      <section class="contacts wrapper" id="map">
         <div class=" contacts__block wrapper">
           <span class="script-map"></span>
         <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
@@ -136,8 +136,19 @@
         <p class="contacts__text">тел. +7 (812) 275-75-75</p>
         <a class="button contacts__link" href="#">Напишите нам</a>
       </div>
+    </div>
       </section>
-
+      <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+      <script type="text/javascript">
+        var myMap;
+        ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
+        function init () {
+          myMap = new ymaps.Map("map", {
+            center: [59.938631, 30.323055], // Координаты центра карты
+            zoom: 17 // Zoom
+          });
+        }
+      </script>
 
 
     </main>
@@ -179,7 +190,7 @@
         <p class="footer__sentence-text">Скидка 10% для друзей из социальных сетей.</p>
    </div>
     </footer>
-    <section class="feedback wrapper">
+    <section class="feedback wrapper visually-hidden">
       <h2 class="feedback__title">Напишите нам</h2>
       <form class="feedback__form input-form" action="http://echo.htmlacademy.ru" method="get">
         <p class="input-form__name">
