@@ -8,15 +8,15 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <header class="header wrapper header-color">
+<div class="header-color">
+    <header class="header wrapper">
       <nav class="header__navigation main-navigation">
         <a class="header__logo">
           <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии Нёрдс">
         </a>
 
         <ul class="main-navigation__list">
-          <li class="main-navigation__item"><a href="#">Студия</a></li>
+          <li class="main-navigation__item main-navigation__item--active"><a>Студия</a></li>
           <li class="main-navigation__item"><a href="#">Клиенты</a></li>
           <li class="main-navigation__item"><a href="catalog.html">Магазин</a></li>
           <li class="main-navigation__item"><a href="#">Контакты</a></li>
@@ -37,11 +37,12 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+</div>
+  <main class="container">
 
       <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
-
-      <section class="promo-slider wrapper header-color">
+<div class="header-color">
+      <section class="promo-slider wrapper ">
            <ul class="promo-slider__list">
              <li class="promo-slider__item promo-slider__item--slide1 item-slider">
                   <b class="item-slider__title">Долго, дорого,<br>скрупулезно.</b>
@@ -70,7 +71,7 @@
            </ul>
 
       </section>
-
+</div>
 
       <section class="services wrapper">
         <ul class="services__list">
@@ -109,11 +110,11 @@
           <p class="features__heading">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
           <dl class="features__list">
             <div class="feat-flex"><dt class="features__term">Уровень самоотдачи</dt>
-            <dd class="features__determination">146%</dd></div>
+            <dd class="features__determination">146<span>%</span></dd></div>
             <div class="feat-flex"><dt class="features__term">Соблюдение сроков</dt>
-            <dd class="features__determination">100%</dd></div>
+            <dd class="features__determination">100<span>%</span></dd></div>
             <div class="feat-flex"><dt class="features__term">Миниальная предоплата</dt>
-            <dd class="features__determination">50%</dd></div>
+            <dd class="features__determination">50<span>%</span></dd></div>
           </dl>
         </div>
       </section>
@@ -127,7 +128,7 @@
         </ul>
       </section>
 
-      <section class="contacts wrapper">
+      <section class="contacts ">
         <div class=" contacts__block wrapper">
           <span class="script-map"></span>
         <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
