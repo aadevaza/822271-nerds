@@ -344,6 +344,17 @@ a {
   margin-top: 50px;
   margin-bottom: 33px;
   position: relative;
+  cursor: pointer;
+}
+
+.collab__item:focus,
+.collab__item:hover {
+  opacity: 1;
+
+}
+
+.collab__item:active {
+  opacity: 0.2;
 }
 
 .collab__item:first-of-type {
@@ -428,6 +439,20 @@ input[type="range"] {
   left: 10%;
 }
 
+.filter__line-active .start {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top:-2px;
+  left: -2px;
+  background-color: #cbcbcb;
+}
+
+
+
+
+
 .filter__line-active {
   position: absolute;
   width: 147px;
@@ -435,6 +460,7 @@ input[type="range"] {
   background: #00ca74;
   top: 50%;
   left: 10%;
+  cursor: pointer;
 }
 
 .filter__line-active::before {
