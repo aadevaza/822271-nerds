@@ -607,7 +607,18 @@ li.catalog__item:hover .catalog-hover {
   text-align: center;
   margin: 0;
   margin-top: 30px;
+}
 
+.catalog-hover__title a {
+  color: black;
+}
+
+.catalog-hover__title:hover a {
+  opacity: 0.5;
+}
+
+.catalog-hover__title:active a {
+  opacity: 0.2;
 }
 
 .catalog-hover__item {
@@ -673,6 +684,8 @@ li.catalog__item:hover .catalog-hover {
   padding-right: 75px;
 }
 
+
+
 .paginator__item--active a{
   background-color: #ffffff;
   padding: 12px 17px;
@@ -690,6 +703,11 @@ li.catalog__item:hover .catalog-hover {
   padding: 15px 20px;
   border: none;
 
+}
+
+.paginator__item--next:active a {
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 /*--сетка--*/
