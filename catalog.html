@@ -36,7 +36,6 @@
 
     <main class="container">
 
-
     <div class="flex wrapper">
       <section class="filter">
         <form action="#" method="post">
@@ -107,9 +106,6 @@
           <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
-
-
-
 
       <section class="catalog">
       <div class="flex">
@@ -194,7 +190,7 @@
       </section>
       </div>
 
-      <section class="contacts wrapper" id="map">
+      <section class="contacts">
       <div class=" contacts__block wrapper">
         <span class="script-map"></span>
         <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
@@ -221,7 +217,7 @@
         <p class="footer__sentence-text">Скидка 10% для друзей из социальных сетей.</p>
      </div>
     </footer>
-    <section class="feedback wrapper ">
+    <section class="feedback wrapper">
       <h2 class="feedback__title">Напишите нам</h2>
       <form class="feedback__form input-form" action="http://echo.htmlacademy.ru" method="get">
       <div class="input-form__flex">
@@ -244,26 +240,19 @@
     </section>
 
     <script>
-
       var link = document.querySelector(".contacts__link");
       var popup = document.querySelector(".feedback");
-
       var close = document.querySelector(".feedback-close")
 
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("feedback-show");
       });
-
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.remove("feedback-show");
       });
-
-
     </script>
-
-
 
   </body>
 </html>
