@@ -190,7 +190,7 @@
       </section>
       </div>
 
-      <section class="contacts">
+      <section class="contacts" id="map">
       <div class=" contacts__block wrapper">
         <span class="script-map"></span>
         <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
@@ -252,6 +252,50 @@
         evt.preventDefault();
         popup.classList.remove("feedback-show");
       });
+    </script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+     ymaps.ready(function () {
+     var myMap = new ymaps.Map('map', {
+         center: [59.939115, 30.321703],
+         zoom: 17
+      },{
+         searchControlProvider: 'yandex#search'
+      }),
+
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+         '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+         hintContent: 'Собственный значок метки',
+         balloonContent: 'Это красивая метка'
+      }, {
+         iconLayout: 'default#image',
+         iconImageHref: 'images/myIcon.gif',
+         iconImageSize: [30, 42],
+         iconImageOffset: [-5, -38]
+      }),
+
+      myPlacemarkWithContent = new ymaps.Placemark([59.938631, 30.323055], {
+         hintContent: 'Собственный значок метки с контентом',
+         balloonContent: 'А эта — новогодняя',
+         iconContent: '12'
+      }, {
+         iconLayout: 'default#imageWithContent',
+         iconImageHref: 'img/map-marker.png',
+         iconImageSize: [231, 190],
+         iconImageOffset: [-54, -200],
+         iconContentOffset: [15, 15],
+         iconContentLayout: MyIconContentLayout
+      });
+
+      myMap.geoObjects
+        .add(myPlacemark)
+        .add(myPlacemarkWithContent);
+      });
+
     </script>
 
   </body>
