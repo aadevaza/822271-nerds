@@ -300,8 +300,9 @@ a {
 .contacts__link {
   width: 220px;
   margin-top: 23px;
-  padding-top: 15px;
-  padding-bottom: 12px;
+  margin-bottom: 6px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .contacts__link:focus {
@@ -414,7 +415,7 @@ a {
 
 .collab__item {
   opacity: 0.5;
-  padding-top: 50px;
+  padding-top: 47px;
   padding-bottom: 33px;
   position: relative;
   cursor: pointer;
@@ -431,6 +432,7 @@ a {
 
 .collab__item:first-of-type {
   margin-left: 30px;
+  margin-top: 10px;
 }
 
 .collab__item:first-of-type::after {
@@ -520,6 +522,17 @@ input[type="range"] {
   top:-2px;
   left: -2px;
   background-color: #cbcbcb;
+}
+
+.filter__line-active .end {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top:-2px;
+  right: -2px;
+  background-color: #cbcbcb;
+  z-index: 1;
 }
 
 .filter__line-active {
@@ -661,6 +674,7 @@ li.catalog__item:hover .catalog-hover {
 .catalog-hover {
   position: absolute;
   width: 360px;
+  max-height: 576px;
   display: block;
   bottom: 0;
   background-color: #eeeeee;
@@ -719,8 +733,9 @@ li.catalog__item:hover .catalog-hover {
 .paginator {
   padding: 0;
   margin: 0;
-  margin-top: 57px;
+  margin-top: 56px;
   margin-bottom: 60px;
+  margin-left: 2px;
   font-size: 16px;
   line-height: 50px;
   text-transform: uppercase;
@@ -738,37 +753,42 @@ li.catalog__item:hover .catalog-hover {
   color: #000000;
   background-color: #eeeeee;
   margin-right: 11px;
-  padding: 15px 22px;
+  padding: 16px 21px;
   outline: none;
   border-radius: 3px;
 }
 
 .paginator__item--next a {
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 76px;
+  padding-right: 76px;
 }
 
 .paginator__item--active a{
   background-color: #ffffff;
-  padding: 12px 17px;
+  padding: 13px 18px;
   border: 3px solid #dbdbdb;
 }
+
+
 
 .paginator__item a:hover,
 .paginator__item a:focus {
   background-color: #dfdfdf;
 }
 
+
 .paginator__item a:active {
   background-color: #d5d5d5;
   box-shadow: inset 0 3px 0 0 #bfbfbf;
-  padding: 15px 20px;
+  padding: 16px 21px;
   border: none;
 }
 
+
+
 .paginator__item--next:active a {
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 76px;
+  padding-right: 76px;
 }
 
 /*--сетка--*/
@@ -1022,7 +1042,7 @@ html {
   margin-left: -470px;
   margin-top: -300px;
   box-shadow: 0 25px 100px 0 black;
-  z-index: 1;
+  z-index: 100;
   display: none;
 }
 
@@ -1060,6 +1080,8 @@ html {
 
   margin: 0 auto;
   position: relative;
+
+  z-index: 100;
 }
 
 .contacts::before {
@@ -1079,7 +1101,7 @@ html {
 
 .contacts__text {
   width: 210px;
-  margin-top: 20px;
+  margin-top: 23px;
 }
 
 
@@ -1140,7 +1162,7 @@ html {
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .filter-input-radio + label::before {
@@ -1182,7 +1204,7 @@ html {
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .filter-input-radio:disabled + label ,
@@ -1379,57 +1401,53 @@ html {
   flex-wrap: wrap;
   padding-left: 0;
   margin: 0;
+  margin-top: 2px;
 }
 
 .social__link a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
   height: 80px;
+  width: 80px;
   border-radius: 50%;
-  background-color: #eeeeee;
+  background-color: #e1e1e1;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 
-.social__link a:hover {
+.social__link:hover a{
   background-color: #e74246;
 }
 
-.social__link a:active {
+.social__link:active a {
   background-color: #d7373b;
 }
 
-.social__link--vk a::before {
-  content: "";
-  width: 25px;
-  height: 15px;
-  background: url("../img/svg/vk-icon.svg") no-repeat;
-  position: absolute;
+.social__link--vk a {
+  background-image: url("../img/svg/vk-icon.svg");
 }
 
-.social__link--fb a:active::before,
-.social__link--insta a:active::before,
-.social__link--vk a:active::before {
-  opacity: 0.5;
+.social__link--vk a:active {
+  background-image: url("../img/svg/vk-icon-op.svg");
 }
 
-.social__link--fb a::before {
-  content: "";
-  width: 15px;
-  height: 25px;
-  background: url("../img/svg/fb-icon.svg") no-repeat;
-  position: absolute;
+.social__link--fb a {
+  background-image: url("../img/svg/fb-icon.svg");
 }
 
-.social__link--insta a::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: url("../img/svg/insta-icon.svg") no-repeat;
-  position: absolute;
+.social__link--fb a:active {
+  background-image: url("../img/svg/fb-icon-op.svg");
 }
 
+.social__link--insta a {
+  background-image: url("../img/svg/insta-icon.svg");
+}
+
+.social__link--insta a:active {
+  background-image: url("../img/svg/insta-icon-op.svg");
+}
 
 .main-navigation__item--active {
   position: relative;
