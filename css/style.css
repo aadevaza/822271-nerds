@@ -1484,6 +1484,19 @@ html {
   background-image: url("../img/svg/insta-icon-op.svg");
 }
 
+.main-navigation__item--active {
+  position: relative;
+}
+
+.main-navigation__item--active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 33px;
+  position: absolute;
+  background: #fb565a;
+}
+
 .filter__box:nth-of-type(3) {
   margin-top: 27px;
 }
