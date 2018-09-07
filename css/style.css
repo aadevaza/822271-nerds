@@ -55,7 +55,7 @@ a {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 104px;
+  bottom: 107px;
   z-index: 100;
   width: 160px;
   height: 18px;
@@ -873,6 +873,16 @@ html {
   background-position: 430px 7px;
   padding-top: 68px;
   padding-bottom: 82px;
+}
+
+.promo-slider__item--slide2 {
+  background-size: 655px;
+  background-position: 500px 0px;
+}
+
+.promo-slider__item--slide3 {
+  background-size: 750px;
+  background-position: 400px 16px;
 }
 
 .services {
