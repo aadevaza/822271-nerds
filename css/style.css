@@ -467,8 +467,11 @@ a {
   background: #eeeeee;
 }
 
+.collab__item:nth-of-type(2) {
+  margin-right: 10px;
+}
 .collab__item:nth-of-type(3) {
-  margin-right: 20px;
+  margin-right: 26px;
 }
 
 .collab__item:last-of-type {
@@ -492,6 +495,7 @@ input[type="range"] {
   border: none;
   border-radius: 3px;
   text-align: center;
+  margin-left: 2px;
 }
 
 .filter__box {
@@ -572,7 +576,7 @@ input[type="range"] {
 }
 
 .filter__input-value {
-  margin-top: 17px;
+  margin-top: 14px;
   display: flex;
   justify-content: space-between;
 
@@ -601,7 +605,7 @@ input[type="range"] {
 
 .filter-button {
   margin-top: 30px;
-  padding: 17px 87px;
+  padding: 16px 89px;
   font-size: 16px;
   line-height: 18px;
   border-radius: 3px;
@@ -738,7 +742,6 @@ li.catalog__item:hover .catalog-hover {
   margin: 0;
   margin-top: 56px;
   margin-bottom: 60px;
-  margin-left: 2px;
   font-size: 16px;
   line-height: 50px;
   text-transform: uppercase;
@@ -1160,7 +1163,7 @@ html {
 }
 
 .filter__box:nth-child(2) {
-  margin-top: 55px;
+  margin-top: 52px;
   display: flex;
   flex-direction: column;
 }
@@ -1182,7 +1185,7 @@ html {
 
 .filter__option {
   list-style: none;
-  margin-top: 1px;
+  margin-top: 0px;
 }
 
 .filter-input-radio + label {
