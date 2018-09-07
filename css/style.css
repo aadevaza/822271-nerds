@@ -8,6 +8,7 @@ body {
   min-width: 1200px;
   background: #ffffff;
   color: #000000;
+  font-kerning: none;
 }
 
 a {
@@ -212,7 +213,7 @@ a {
   display: inline-block;
   width: 160px;
   padding-top: 15px;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
 }
 
 .button--red {
@@ -417,6 +418,7 @@ a {
   opacity: 0.5;
   padding-top: 47px;
   padding-bottom: 33px;
+  margin-bottom: 3px;
   position: relative;
   cursor: pointer;
 }
@@ -501,7 +503,7 @@ input[type="range"] {
   width: 260px;
   background-color: #eeeeee;
   border-radius: 3px;
-  margin-top: 45px;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -576,10 +578,7 @@ input[type="range"] {
 
 }
 
-.filter__input-value label:first-child {
-  margin-left: 5px;
 
-}
 
 .filter__input-value span {
   margin-right: 5px;
@@ -668,6 +667,10 @@ input[type="range"] {
 
 li.catalog__item:focus .catalog-hover,
 li.catalog__item:hover .catalog-hover {
+  opacity: 1;
+}
+
+.catalog-hover:focus {
   opacity: 1;
 }
 
@@ -851,8 +854,8 @@ html {
 }
 
 .item-slider__text {
-  margin-top: 23px;
-  margin-bottom: 40px;
+  margin-top: 27px;
+  margin-bottom: 38px;
 }
 
 .item-slider__link {
@@ -864,10 +867,10 @@ html {
 }
 
 .item-slider {
-  width: 1140px;
+  width: 1150px;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right top;
+  background-size: 700px;
+  background-position: 430px 7px;
   padding-top: 68px;
   padding-bottom: 82px;
 }
@@ -889,16 +892,21 @@ html {
 .services__item {
   width: 303px;
   background-position: top;
-  margin-top: 70px;
+  margin-top: 68px;
+}
+
+
+.services__item:not(:first-of-type) {
+  margin-left: 3px;
 }
 
 .services__title {
   margin-bottom: 17px;
-  margin-top: 26px;
+  margin-top: 25px;
 }
 
 .services__text {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .about-us {
@@ -907,7 +915,7 @@ html {
   justify-content: space-between;
   padding: 0;
   padding-top: 118px;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
   margin-bottom: 18px;
 }
 
@@ -916,11 +924,10 @@ html {
 }
 
 .brief-info__title {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .brief-info__header {
-  margin-top: 40px;
   margin-bottom: 25px;
   font-size: 16px;
   line-height: 24px;
@@ -934,9 +941,13 @@ html {
   margin-top: 24px;
 }
 
+.features {
+  margin-top: 4px;
+
+}
 .features__list {
   display: flex;
-  margin-top: 35px;
+  margin-top: 31px;
   width: 340px;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1114,7 +1125,7 @@ html {
   width: 320px;
   padding: 40px 50px;
   top: 54px;
-  left: 94px;
+  left: 139px;
   background: white;
   background-position: left center;
   z-index: 1;
@@ -1155,6 +1166,7 @@ html {
 
 .filter__option {
   list-style: none;
+  margin-top: 1px;
 }
 
 .filter-input-radio + label {
@@ -1191,7 +1203,7 @@ html {
 }
 
 .filter__box:nth-of-type(2) li {
-  margin-top: 14px;
+  margin-top: 15px;
 }
 
 .filter__box:nth-of-type(3) li {
@@ -1212,6 +1224,8 @@ html {
   opacity: 0.1;
 }
 
+.filter-input-radio:focus + label,
+.filter-input-checkbox:focus + label,
 .filter-input-radio:hover + label,
 .filter-input-checkbox:hover + label {
   opacity: 1;
@@ -1378,8 +1392,12 @@ html {
   background: #fb565a;
   width: 25px;
   height: 2px;
-  left: -36px;
-  top: 11px;
+  left: -35.5px;
+  top: 10px;
+}
+
+.brief-info__text {
+  margin-bottom: 38px;
 }
 
 .footer {
@@ -1423,6 +1441,7 @@ html {
 
 .social__link:active a {
   background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
 }
 
 .social__link--vk a {

@@ -56,17 +56,17 @@
             <ul class="filter__option">
               <li class="filter__option-radio">
                     <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="radio-test" checked>
-                    <label for="adaptive">Адаптивная</label>
+                    <label for="adaptive" tabindex="0">Адаптивная</label>
               </li>
 
               <li class="filter__option-radio">
                     <input class="visually-hidden filter-input filter-input-radio" id="fix" type="radio" name="radio-test">
-                    <label for="fix">Фиксированная</label>
+                    <label for="fix" tabindex="0">Фиксированная</label>
               </li>
 
               <li class="filter__option-radio">
                     <input class="visually-hidden filter-input filter-input-radio" id="rubber" type="radio" name="radio-test">
-                    <label for="rubber">Резиновая</label>
+                    <label for="rubber" tabindex="0">Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -75,27 +75,27 @@
             <ul class="filter__option">
               <li class="filter__option-checkbox">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="slider" name="checkbox-test" checked>
-                    <label for="slider">Слайдер</label>
+                    <label for="slider" tabindex="0">Слайдер</label>
               </li>
 
               <li class="filter__option-checkbox">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="advantages" name="checkbox-test">
-                    <label for="advantages">Блок преимуществ</label>
+                    <label for="advantages" tabindex="0">Блок преимуществ</label>
               </li>
 
               <li class="filter__option-checkbox">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="news" name="checkbox-test" checked>
-                    <label for="news">Новости</label>
+                    <label for="news" tabindex="0">Новости</label>
               </li>
 
               <li class="filter__option-checkbox">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="gallery" name="checkbox-test">
-                    <label for="gallery">Галерея</label>
+                    <label for="gallery" tabindex="0">Галерея</label>
               </li>
 
               <li class="filter__option-checkbox">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="basket" name="checkbox-test">
-                    <label for="basket">Корзина</label>
+                    <label for="basket" tabindex="0">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -112,10 +112,10 @@
           <li class="catalog-sorting__item"><a href="#">По названию</a></li>
         </ul>
         <ul class="catalog-extra">
-          <li class="catalog-extra__down">
+          <li class="catalog-extra__down" tabindex="0">
             <a href="#"></a>
           </li>
-          <li class="catalog-extra__up">
+          <li class="catalog-extra__up" tabindex="0">
             <a href="#"></a>
           </li>
         </ul>
@@ -253,7 +253,7 @@
     <script type="text/javascript">
          ymaps.ready(function () {
          var myMap = new ymaps.Map('map', {
-             center: [59.939115, 30.321703],
+             center: [59.939135, 30.321534],
              zoom: 17
           },{
              searchControlProvider: 'yandex#search'
@@ -263,7 +263,7 @@
              '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
           ),
 
-          myPlacemarkWithContent = new ymaps.Placemark([59.938631, 30.323055], {
+          myPlacemarkWithContent = new ymaps.Placemark([59.938690, 30.323200], {
              hintContent: 'NЁRDS DESIGN STUDIO',
              balloonContent: '191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8',
              iconContent: '15'
