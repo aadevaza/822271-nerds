@@ -714,12 +714,11 @@ li:hover  .catalog-hover {
   line-height: 18px;
   color: #cacaca;
   text-align: center;
-  margin-top: 0px;
-  width: 200px;
+  width: 230px;
   margin: 0;
   margin-top: 15px;
   margin-bottom: 30px;
-  margin-left: 80px;
+  margin-left: 65px;
 }
 
 .catalog-hover__link {
