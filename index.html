@@ -50,9 +50,11 @@
                   <a class="button item-slider__link" href="#">Узнать больше</a>
              </li>
              <li class="promo-slider__item promo-slider__item--slide2 item-slider">
-                  <b class="item-slider__title">Любим математику<br> как никто другой</b>
-                  <p class="item-slider__text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+                <div class="item-slider-wrapper">
+                  <b class="item-slider__title">Любим математику как никто другой</b>
+                  <p class="item-slider__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                   <a class="button item-slider__link" href="#">Узнать больше</a>
+                </div>
              </li>
              <li class="promo-slider__item promo-slider__item--slide3 item-slider">
                   <b class="item-slider__title">Только ночь,<br>только хардкор</b>
@@ -69,7 +71,7 @@
         <ul class="services__list">
           <li class="services__item services__title--web">
             <h2 class="services__title ">Веб-сайты</h2>
-            <p class="services__text">Мир никогда не будет прежним<br> после того как увидит ваш сайт!</p>
+            <p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button services__link button--red" href="#">Заказать</a>
           </li>
           <li class="services__item services__title--app">
@@ -78,8 +80,8 @@
             <a class="button services__link button--green" href="#">Заказать</a>
           </li>
           <li class="services__item services__title--presentation">
-            <h2 class="services__title">Презентация</h2>
-            <p class="services__text">Вы даже не подозреваете,<br> на сколько вы изумительный!</p>
+            <h2 class="services__title">Презентации</h2>
+            <p class="services__text">Вы даже не подозреваете, насколько вы изумительный!</p>
             <a class="button  services__link button--yellow" href="#">Заказать</a>
           </li>
         </ul>
@@ -171,52 +173,8 @@
       <button class="feedback-close" type="button">Закрыть</button>
     </section>
 
-    <script>
-      var link = document.querySelector(".contacts__link");
-      var popup = document.querySelector(".feedback");
-      var close = document.querySelector(".feedback-close")
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("feedback-show");
-      });
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("feedback-show");
-      });
-    </script>
-
+    <script src="js/script.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script type="text/javascript">
-         ymaps.ready(function () {
-         var myMap = new ymaps.Map('map', {
-             center: [59.939135, 30.321534],
-             zoom: 17
-          },{
-             searchControlProvider: 'yandex#search'
-          }),
-
-          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-          ),
-
-          myPlacemarkWithContent = new ymaps.Placemark([59.938690, 30.323200], {
-             hintContent: 'NЁRDS DESIGN STUDIO',
-             balloonContent: '191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8',
-             iconContent: '15'
-          }, {
-             iconLayout: 'default#imageWithContent',
-             iconImageHref: 'img/map-marker.png',
-             iconImageSize: [231, 190],
-             iconImageOffset: [-54, -200],
-             iconContentOffset: [15, 15],
-             iconContentLayout: MyIconContentLayout
-          });
-
-          myMap.geoObjects
-            .add(myPlacemarkWithContent);
-          });
-
-    </script>
 
   </body>
 </html>
