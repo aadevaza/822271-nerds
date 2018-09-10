@@ -1370,11 +1370,6 @@ html {
 	flex-direction: column;
 }
 
-.checkbox,
-.radio {
-	display: none;
-}
-
 .catalog {
 	width: 760px;
 	margin-left: auto;
