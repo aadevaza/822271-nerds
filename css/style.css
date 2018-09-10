@@ -661,9 +661,6 @@ input[type="range"] {
   color: #000000;
 }
 
-
-
-
 .catalog__wrapper {
   position: relative;
   display: flex;
@@ -684,7 +681,6 @@ li:hover  .catalog-hover {
   bottom: 0px;
   background-color: #eeeeee;
   overflow: auto;
-
 }
 
 .catalog-hover__title {
@@ -907,7 +903,6 @@ html {
   display: flex;
   flex-direction: column;
 }
-
 
 .services__title {
   margin-bottom: 1px;
