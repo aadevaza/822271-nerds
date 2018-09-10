@@ -1,0 +1,1 @@
+var link=document.querySelector(".contacts__link"),popup=document.querySelector(".feedback"),close=document.querySelector(".feedback-close");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("feedback-show")}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("feedback-show")});

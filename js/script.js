@@ -1,4 +1,3 @@
-
   var link = document.querySelector(".contacts__link");
   var popup = document.querySelector(".feedback");
   var close = document.querySelector(".feedback-close")
