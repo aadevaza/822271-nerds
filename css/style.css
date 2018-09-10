@@ -929,6 +929,7 @@ html {
 
 .brief-info__title {
   margin-bottom: 35px;
+  letter-spacing: 0.2px;
 }
 
 .brief-info__header {
