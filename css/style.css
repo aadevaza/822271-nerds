@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto", "Arial", "sans-serif";
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 500;
@@ -929,7 +929,7 @@ html {
 }
 
 .services__list {
-	width: 1043px;
+	width: 1060px;
 	margin: 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -947,7 +947,7 @@ html {
 }
 
 .services__item {
-	width: 245px;
+	width: 260px;
 	height: 100%;
 	background-position: top;
 	margin-top: 68px;
@@ -967,6 +967,8 @@ html {
 
 .services__text {
 	margin-bottom: 33px;
+	margin-left: 3px;
+	letter-spacing: -0.1px;
 }
 
 .about-us {
